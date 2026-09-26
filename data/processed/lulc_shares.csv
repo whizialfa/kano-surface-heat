@@ -1,0 +1,8 @@
+order,cover,worldcover,cells_30m,km2,share
+1,Built-up,50,285289,256.8,0.4482
+2,Cropland,40,255647,230.1,0.4017
+3,Bare ground,60,11336,10.2,0.0178
+4,Grass,30,65128,58.6,0.1023
+5,Shrubs,20,4944,4.4,0.0078
+6,Trees,10,13542,12.2,0.0213
+7,Water and wetland,80+90,597,0.5,0.0009

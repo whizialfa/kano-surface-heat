@@ -8,7 +8,7 @@ Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every 
 
 ## Findings
 
-**Kano is cooler than the farmland around it in the hot dry season.** In all 28 clear scenes from March and April, 2015 to 2026, the city's median surface was cooler than a ring 1 to 10 km outside it (median −1.6 °C) and the fringe of Ungogo and Kumbotso was hotter than the old city (median +1.75 °C). The three exceptions are all May scenes, after early rain.
+**Kano is cooler than its farmland by day and warmer by night.** In all 28 clear Landsat scenes from March and April, 2015 to 2026, the city's median surface at about 10:30 was cooler than a ring 1 to 10 km outside it (median −1.6 °C) and the fringe of Ungogo and Kumbotso was hotter than the old city (median +1.75 °C). MODIS night passes flip it: at 22:30 and 01:30 in the hot season the city is 1.4 and 1.1 °C warmer than the ring, in 95% and 91% of clear composites, and the old city is the warmest ground. In the rains the city is warmer by day instead.
 
 **Built-up ground is the cool ground.** Each extra built-up 10 m cell in a 30 m pixel lowers hot-season surface temperature, from 47.0 °C with none to 44.8 °C with nine of nine. Farmland and bare earth raise it (45.0 to 47.4 °C). Trees, shrub and grass barely move it. Greenness (NDVI) has no relationship with surface heat in any year (r −0.04 to +0.20; Bangalore −0.46).
 
@@ -16,7 +16,8 @@ Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every 
 
 | | |
 |---|---|
-| ![Hot ground in Kano](maps/kano_heat_plate.png) | ![Hot ground and long walks](maps/kano_heat_walk_plate.png) |
+| ![Land cover in Kano](maps/kano_lulc_plate.png) | ![Hot ground in Kano](maps/kano_heat_plate.png) |
+| ![Hot ground and long walks](maps/kano_heat_walk_plate.png) | ![Cool by day, warm by night](charts/cool_day_warm_night.png) |
 | ![Built-up cells cool the ground](charts/built_cells_cool.png) | ![Cooler than its farmland, each hot season](charts/cool_island_by_year.png) |
 
 Plates are A3 PNG and PDF in `maps/`, built by `qgis/build_heat_plates.py` with QGIS's Python (`env -u PYTHONPATH /Applications/QGIS.app/Contents/MacOS/bin/python3.9 qgis/build_heat_plates.py`). The furniture is imported from the walking paper's builder, so both papers print as one family.
@@ -42,6 +43,8 @@ python -m kanoheat.composition                     # WorldCover mix per 30 m pix
 python -m kanoheat.indices --years 2015-2026       # spectral indices (≈15 min)
 python -m kanoheat.regression
 python -m kanoheat.exposure                        # hexes, people, wards, walking time
+python -m kanoheat.modis --all-seasons             # MODIS day/night, 4 passes a day (≈11 min)
+python -m kanoheat.lulc                            # land-cover layer for the plate
 python -m kanoheat.charts
 ```
 
@@ -49,4 +52,4 @@ Analysis Python is `/opt/anaconda3/bin/python3.12`. Rasters land in `data/raw/` 
 
 ## Next
 
-Night-time check with MODIS day/night surface temperature (does the city stay cooler after dark?), a 2023 land-cover update, then the short brief and the colour PDF.
+A 2023 land-cover update, then the short brief and the colour PDF.

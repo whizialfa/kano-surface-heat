@@ -66,6 +66,18 @@ HEAT_WALK_BREAKS = [
 ]
 
 
+# Codes from kanoheat.lulc.CLASSES. Built-up is grey, not red: on these plates red means hot.
+LULC_BREAKS = [
+    (0.5, 1.5, f"92,92,100,{FILL_ALPHA}", "Built-up"),
+    (1.5, 2.5, f"236,205,120,{FILL_ALPHA}", "Cropland"),
+    (2.5, 3.5, f"205,190,172,{FILL_ALPHA}", "Bare ground"),
+    (3.5, 4.5, f"186,206,122,{FILL_ALPHA}", "Grass"),
+    (4.5, 5.5, f"138,158,84,{FILL_ALPHA}", "Shrubs"),
+    (5.5, 6.5, f"38,110,56,{FILL_ALPHA}", "Trees"),
+    (6.5, 7.5, f"58,124,196,{FILL_ALPHA}", "Water and wetland"),
+]
+
+
 def _layers():
     osm = QgsRasterLayer(
         "type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0&crs=EPSG3857",
@@ -89,7 +101,9 @@ def _layers():
     bcp._graduated(heat, "lst", HEAT_BREAKS)
     heat_walk = bcp._vector(PROCESSED / "kano_hex_heat.gpkg", "kano_hex_heat", "4 Heat and walking time")
     bcp._graduated(heat_walk, "heat_walk", HEAT_WALK_BREAKS)
-    return osm, boundary, wards, places, heat, heat_walk
+    lulc = bcp._vector(PROCESSED / "kano_lulc_30m.gpkg", "kano_lulc_30m", "5 Land cover (WorldCover 2021, 30 m)")
+    bcp._graduated(lulc, "code", LULC_BREAKS, outline_width="0")
+    return osm, boundary, wards, places, heat, heat_walk, lulc
 
 
 def main() -> None:
@@ -105,12 +119,13 @@ def main() -> None:
     project.setPresetHomePath(str(HERE))
     project.setFileName(str(out))
 
-    osm, boundary, wards, places, heat, heat_walk = _layers()
-    for layer in (osm, heat, heat_walk, wards, places, boundary):
+    osm, boundary, wards, places, heat, heat_walk, lulc = _layers()
+    for layer in (osm, lulc, heat, heat_walk, wards, places, boundary):
         project.addMapLayer(layer, True)
-    node = project.layerTreeRoot().findLayer(heat_walk.id())
-    if node:
-        node.setItemVisibilityChecked(False)
+    for hidden in (heat_walk, lulc):
+        node = project.layerTreeRoot().findLayer(hidden.id())
+        if node:
+            node.setItemVisibilityChecked(False)
 
     overlays = [boundary, places, wards]
     heat.updateExtents()
@@ -151,6 +166,26 @@ def main() -> None:
         ),
         legend_title="Heat and walk",
         export_stem="heat_walk_plate",
+    )
+    print(f"  → {png.name}", flush=True)
+
+    png = bcp._kigali_layout(
+        project,
+        SLUG,
+        layout_name="Land cover",
+        choropleth=lulc,
+        overlays=overlays,
+        osm=osm,
+        extent_wgs=heat.extent(),
+        title="LAND COVER IN KANO",
+        subtitle="What covers the ground",
+        caption=(
+            "This map shows what covers the ground, from ESA WorldCover 2021. "
+            "Each cell is 30 metres, the most common cover among nine 10-metre cells. "
+            "Built-up is 45% of the area and cropland 40%, bare earth in the hot season."
+        ),
+        legend_title="Land cover",
+        export_stem="lulc_plate",
     )
     print(f"  → {png.name}", flush=True)
 
