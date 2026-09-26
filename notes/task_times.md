@@ -70,3 +70,9 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-26 23:40:59 WAT` done **LST per scene** in **2.1 min** (127 s) — 40 scenes; city cooler than ring in 37; fringe hotter in 38
 - `2026-09-26 23:41:55 WAT` start **LST series** — hot
 - `2026-09-26 23:42:00 WAT` done **LST series** in **0.1 min** (5 s) — 12 years → lst_series.csv; pooled lst_hot_all.tif; thermal_classes.csv
+- `2026-09-26 23:52:03 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
+- `2026-09-26 23:52:13 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
+- `2026-09-26 23:52:30 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
+- `2026-09-26 23:52:40 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
+- `2026-09-26 23:53:01 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
+- `2026-09-26 23:53:10 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv

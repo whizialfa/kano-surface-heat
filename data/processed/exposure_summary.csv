@@ -21,7 +21,11 @@ coolest_decile_women15_49,141472.5917,
 hottest_decile_share_pop,0.0212,
 coolest_decile_share_pop,0.1066,
 hottest_quintile_threshold,47.1235,"°C, hexes with ≥ 50 people"
-hot_and_far_people,267879.16,hottest fifth and PT_k > 15 min
-hot_and_far_under5,44123.9694,
-hot_and_far_share_of_far,0.1414,"of people outside 15 minutes, share on the hottest fifth"
+hot_hexes,831.0,populated hexes in the hottest fifth
+hot_and_far_hexes,806.0,
+hot_and_near_hexes,25.0,
+hot_and_far_people,260964.4914,"hottest fifth and PT_k > 15 min, hexes with ≥ 50 people"
+hot_and_far_under5,42466.5021,
+hot_people_share_far,0.9461,"of people on the hottest fifth, share more than 15 minutes' walk"
+hot_and_far_share_of_far,0.1387,"of people outside 15 minutes, share on the hottest fifth"
 r_lst_walk_popweighted,0.3578,hexes with ≥ 50 people

@@ -12,11 +12,14 @@ Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every 
 
 **Built-up ground is the cool ground.** Each extra built-up 10 m cell in a 30 m pixel lowers hot-season surface temperature, from 47.0 °C with none to 44.8 °C with nine of nine. Farmland and bare earth raise it (45.0 to 47.4 °C). Trees, shrub and grass barely move it. Greenness (NDVI) has no relationship with surface heat in any year (r −0.04 to +0.20; Bangalore −0.46).
 
-**People mostly live on cooler ground, except on the farmland edge.** Population-weighted surface temperature is 45.0 °C against 46.0 °C for the average hexagon. 268,000 people, 44,000 of them under five, live on the hottest fifth of ground and more than 15 minutes' walk from clinics and schools. The hottest populated wards are Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso.
+**People mostly live on cooler ground, except on the farmland edge.** Population-weighted surface temperature is 45.0 °C against 46.0 °C for the average hexagon. 95% of the people on the hottest fifth of populated ground are also more than 15 minutes' walk from clinics and schools: 261,000 people, 42,000 of them under five. The hottest populated wards are Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso.
 
 | | |
 |---|---|
+| ![Hot ground in Kano](maps/kano_heat_plate.png) | ![Hot ground and long walks](maps/kano_heat_walk_plate.png) |
 | ![Built-up cells cool the ground](charts/built_cells_cool.png) | ![Cooler than its farmland, each hot season](charts/cool_island_by_year.png) |
+
+Plates are A3 PNG and PDF in `maps/`, built by `qgis/build_heat_plates.py` with QGIS's Python (`env -u PYTHONPATH /Applications/QGIS.app/Contents/MacOS/bin/python3.9 qgis/build_heat_plates.py`). The furniture is imported from the walking paper's builder, so both papers print as one family.
 
 This is surface temperature, not air temperature: how hot the ground is at about 10:30, not heat stress.
 
