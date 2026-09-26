@@ -66,9 +66,9 @@ HEAT_WALK_BREAKS = [
 ]
 
 
-# Codes from kanoheat.lulc.CLASSES. Built-up is grey, not red: on these plates red means hot.
+# Codes from kanoheat.lulc.CLASSES.
 LULC_BREAKS = [
-    (0.5, 1.5, f"92,92,100,{FILL_ALPHA}", "Built-up"),
+    (0.5, 1.5, f"158,76,66,{FILL_ALPHA}", "Built-up"),
     (1.5, 2.5, f"236,205,120,{FILL_ALPHA}", "Cropland"),
     (2.5, 3.5, f"205,190,172,{FILL_ALPHA}", "Bare ground"),
     (3.5, 4.5, f"186,206,122,{FILL_ALPHA}", "Grass"),

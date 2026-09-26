@@ -67,7 +67,7 @@ Across the pooled surface, local government medians run from Kano Municipal (44.
 
 Read the anchor's way, Kano's all-vegetation pixels are its hottest ground, because most of what WorldCover calls vegetation is cropland that is bare in March. Read the Sahel's way, bare ground is hottest, as in Bangalore, but pure built-up pixels are still 1.1 °C cooler than the remaining trees, shrub and grass, and 2.6 °C cooler than bare fields. Only open water is cooler than the built city.
 
-The plate *Land cover in Kano* (`maps/kano_lulc_plate.png`) shows the most common WorldCover class in each 30 m cell. Built-up covers 45% of the metropolitan area, cropland 40%, grass 10% and trees 2% (`lulc_shares.csv`). Set beside *Hot ground in Kano*, the grey built-up core is the cool blue and the gold cropland ring is the red.
+The plate *Land cover in Kano* (`maps/kano_lulc_plate.png`) shows the most common WorldCover class in each 30 m cell. Built-up covers 45% of the metropolitan area, cropland 40%, grass 10% and trees 2% (`lulc_shares.csv`). Set beside *Hot ground in Kano*, the dull-red built-up core is the cool blue and the gold cropland ring is the hot red.
 
 The gradient (Figure 1, `composition_gradient.csv`) shows the same thing without classes:
 
