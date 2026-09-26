@@ -11,7 +11,7 @@ In the hot dry season, metropolitan Kano is cooler than the farmland around it. 
 
 Built-up ground is Kano's cool ground. Every additional built-up 10 m cell in a 30 m pixel lowers its hot-season surface temperature, from 47.0 °C with none to 44.8 °C with all nine. Every additional cell of farmland or bare earth raises it, from 45.0 to 47.4 °C. Trees, shrub and grass barely change it. This reverses the ordering in Bangalore, the anchor city, where vegetation and water were the heat sinks and the policy advice was to keep 30% green cover per plot. Greenness (NDVI) has no relationship with hot-season surface heat in Kano in any year.
 
-People live on the cooler ground. The population-weighted surface temperature is 45.0 °C, a full degree below the average hexagon (46.0 °C). The hottest tenth of populated hexagons holds 122,000 people (2.1%); the coolest tenth holds 616,000. The heat that does reach homes sits on the farmland edge: Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso. 268,000 people, 44,000 of them under five, live on the hottest fifth of ground and more than 15 minutes' walk from five clinics and five schools. Hotter hexagons are farther from services (population-weighted r = 0.36).
+People live on the cooler ground. The population-weighted surface temperature is 45.0 °C, a full degree below the average hexagon (46.0 °C). The hottest tenth of populated hexagons holds 122,000 people (2.1%); the coolest tenth holds 616,000. The heat that does reach homes sits on the farmland edge: Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso. Almost everyone on that hot ground is also far from services: of the 276,000 people on the hottest fifth of populated ground, 95% are more than 15 minutes' walk from five clinics and five schools. That is 261,000 people, 42,000 of them under five. Across the city, hotter hexagons are farther from services (population-weighted r = 0.36).
 
 This is surface temperature, not air temperature. A cool roof is not a cool bedroom. The claim is about where the ground is hottest and what covers it.
 
@@ -88,7 +88,8 @@ Moisture, not greenness, tracks the cool ground: the water index is the stronges
 | Whole city | 5,780,865 | | |
 | Hottest tenth of populated hexagons (≥ 47.7 °C) | 122,404 (2.1%) | 20,529 | 2,675 |
 | Coolest tenth (≤ 43.6 °C) | 616,189 (10.7%) | 104,972 | 13,676 |
-| Hottest fifth (≥ 47.1 °C) and more than 15 minutes' walk | 267,879 | 44,124 | |
+| Hottest fifth (≥ 47.1 °C) and more than 15 minutes' walk | 260,964 | 42,467 | |
+| Hottest fifth and within 15 minutes' walk | 14,873 | 2,362 | |
 
 *Populated: at least 50 people in the hexagon. Source: `exposure_summary.csv`.*
 
@@ -105,6 +106,8 @@ The GRID3 age-sex layers apply one age structure across the city: under-fives ar
 | Daurawa | Tarauni | 17,024 | 43.8 °C | 8 min | Layin Barwa |
 
 *Hottest five wards and two of the coolest. Source: `ward_heat.csv`.*
+
+Two plates carry this section: *Hot ground in Kano* (`maps/kano_heat_plate.png`) and *Hot ground and long walks* (`maps/kano_heat_walk_plate.png`). On the second, only 25 of the 831 hottest populated hexagons are within a 15-minute walk.
 
 Kumbotso is not uniformly hot. Its dense inner wards, Dan Maliki and Naibawa, are among the coolest ground in the city. The heat is where farmland still meets new building.
 

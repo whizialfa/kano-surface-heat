@@ -106,6 +106,26 @@ def build(lst_name: str = "lst_hot_all") -> gpd.GeoDataFrame:
     return hexes
 
 
+HEAT_WALK = {
+    1: "Hottest fifth, over 15 min",
+    2: "Hottest fifth, within 15 min",
+    3: "Cooler, over 15 min",
+    4: "Cooler, within 15 min",
+    5: "Fewer than 50 people",
+}
+POPULATED = 50
+
+
+def heat_walk_codes(h: gpd.GeoDataFrame) -> tuple[np.ndarray, float]:
+    """Plate classes. The hot cut is the hottest fifth of populated hexes, as quoted."""
+    populated = h["pop"] >= POPULATED
+    q80 = float(np.quantile(h.loc[populated & np.isfinite(h["lst"]), "lst"], 0.8))
+    hot = h["lst"] >= q80
+    far = h["PT_k"] > WALK_LIMIT
+    code = np.select([~populated, hot & far, hot & ~far, ~hot & far], [5, 1, 2, 3], default=4)
+    return code.astype("int16"), q80
+
+
 def _wmean(v, w):
     ok = np.isfinite(v) & (w > 0)
     return float(np.sum(v[ok] * w[ok]) / np.sum(w[ok])) if ok.any() else np.nan
@@ -131,7 +151,7 @@ def summarise(h: gpd.GeoDataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
         add(f"{col}_share_lga_min", float(share.min()), "GRID3 age-sex applies one age structure across metro Kano")
         add(f"{col}_share_lga_max", float(share.max()), "so age groups are counts, not a differential exposure")
 
-    populated = h[h["pop"] >= 50]
+    populated = h[h["pop"] >= POPULATED]
     q90 = float(np.quantile(populated["lst"], 0.9))
     q10 = float(np.quantile(populated["lst"], 0.1))
     add("hottest_decile_threshold", q90, "°C, hexes with ≥ 50 people")
@@ -145,11 +165,19 @@ def summarise(h: gpd.GeoDataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     add("coolest_decile_share_pop", float(cool["pop"].sum() / pop.sum()))
 
     q80 = float(np.quantile(populated["lst"], 0.8))
-    far = h["PT_k"] > WALK_LIMIT
-    hot_far = (h["lst"] >= q80) & far
+    is_pop = h["pop"] >= POPULATED
+    far = is_pop & (h["PT_k"] > WALK_LIMIT)
+    hot = is_pop & (h["lst"] >= q80)
+    hot_far = hot & far
     add("hottest_quintile_threshold", q80, "°C, hexes with ≥ 50 people")
-    add("hot_and_far_people", float(h.loc[hot_far, "pop"].sum()), f"hottest fifth and PT_k > {WALK_LIMIT:.0f} min")
+    add("hot_hexes", int(hot.sum()), "populated hexes in the hottest fifth")
+    add("hot_and_far_hexes", int(hot_far.sum()))
+    add("hot_and_near_hexes", int((hot & ~far).sum()))
+    add("hot_and_far_people", float(h.loc[hot_far, "pop"].sum()),
+        f"hottest fifth and PT_k > {WALK_LIMIT:.0f} min, hexes with ≥ 50 people")
     add("hot_and_far_under5", float(h.loc[hot_far, "under5"].sum()))
+    add("hot_people_share_far", float(h.loc[hot_far, "pop"].sum() / h.loc[hot, "pop"].sum()),
+        "of people on the hottest fifth, share more than 15 minutes' walk")
     add("hot_and_far_share_of_far", float(h.loc[hot_far, "pop"].sum() / h.loc[far, "pop"].sum()),
         "of people outside 15 minutes, share on the hottest fifth")
     w = populated["pop"].to_numpy()
@@ -182,6 +210,7 @@ def main() -> None:
     args = ap.parse_args()
     t0 = timing.start("exposure", f"hexes × {args.lst} × GRID3 age-sex")
     h = build(args.lst)
+    h["heat_walk"], _ = heat_walk_codes(h)
     h.to_file(HEX_GPKG, driver="GPKG")
     h.drop(columns="geometry").to_csv(HEX_CSV, index=False)
     summary, ward = summarise(h)
