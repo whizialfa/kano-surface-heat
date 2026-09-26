@@ -49,4 +49,4 @@ Analysis Python is `/opt/anaconda3/bin/python3.12`. Rasters land in `data/raw/` 
 
 ## Next
 
-Print plates (hot-season surface, and heat against walking time) in the walking paper's style, a short brief, and the colour PDF.
+Night-time check with MODIS day/night surface temperature (does the city stay cooler after dark?), a 2023 land-cover update, then the short brief and the colour PDF.
