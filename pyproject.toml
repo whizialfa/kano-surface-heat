@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kano-surface-heat"
+version = "0.1.0"
+description = "Surface heat, land cover and exposure in metropolitan Kano. Adaptation of Ramachandra et al. 2025, not a replication."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "geopandas",
+  "shapely",
+  "pyproj",
+  "rasterio",
+  "pystac-client",
+  "planetary-computer",
+  "scipy",
+  "statsmodels",
+  "libpysal",
+  "esda",
+  "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
