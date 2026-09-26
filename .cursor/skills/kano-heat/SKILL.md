@@ -31,9 +31,16 @@ Adapted measurement of Ramachandra, Rana, Vinay & Aithal 2025, *Sci Rep* 15, 244
 - Regression p-values are not results under spatial autocorrelation. Quote coefficients and Moran's I of residuals.
 - People come from GRID3 NGA v3.0 total and age-sex rasters on the 200 m hexes.
 
-## Preliminary (hot season 2026, 6 scenes)
+## Quoted headlines (hot season, 2015–2026)
 
-Ring median 45.0 °C, outline median 43.5 °C: a daytime **surface cool island**. Ungogo hottest LGA (44.3 °C mean), Kano Municipal and Gwale coolest (42.6). The bright line in Fagge is the airport runway. Do not quote as the result until the 2015–2026 series and the composition classes are in.
+Mast: **Hot ground** / *Surface heat, land cover and people in metropolitan Kano*. Write-up `notes/results.md`.
+
+- **Surface cool island.** All 28 March–April scenes: city cooler than the 1–10 km ring (median −1.6 °C) and fringe (Ungogo, Kumbotso) hotter than the old city (median +1.75 °C). 37/40 and 38/40 across March–May; every exception is a May scene after early rain (4 May 2019 is +4.3 °C). Lead with per-scene counts (`lst_by_scene.csv`), not yearly medians.
+- **Built-up is cool ground.** Gradient (`composition_gradient.csv`): built 0→9 cells 47.00→44.75 °C; farmland/bare 44.95→47.39; trees/shrub/grass flat ~45.9. Anchor classes: C11 all-vegetation hottest (47.11) with cropland as vegetation; C1 all-bare hottest (47.39) with cropland as bare; C2 built 44.75 either way.
+- **NDVI does not predict heat** (r −0.04 to +0.20 by year; Bangalore −0.46). MNDWI strongest (−0.62). Never quote the four-index model: VIF up to 34, signs flip by year, Moran's I 0.30–0.67.
+- **Hot spots** (μ+2σ = 49.8 °C) 1.7 km², 1,854 of 1,922 pixels cropland or grass; Fanisau, Rangaza, Karo and Kwachiri (airport). UTFVI "strong" or worse 1.7% (kelvin, Zhang); UTFVI is relative to each city's mean, so do not compare shares with Bangalore's 76% as if they meant the same thing.
+- **People.** Population-weighted LST 45.0 vs area 46.0 °C. Hottest tenth of populated hexes: 122k people (2.1%). Hot and far (hottest fifth and PT_k > 15 min): 268k people, 44k under five. r(LST, walk) = 0.36. Hottest wards Karo, Yada Kunya, Chalawa, Rangaza, Fanisau; Dan Maliki and Naibawa in Kumbotso are cool.
+- **Age-sex layers are one age structure across Kano** (under-5 16.5–16.7% of every LGA). Report age counts, never age-weighted temperatures.
 
 ## Do not
 
