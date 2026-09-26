@@ -6,3 +6,67 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-26 22:26:58 WAT` done **scene inventory** in **2.9 min** (175 s) — 1160 scenes, 142 usable; by season {'harmattan': 53, 'hot': 40, 'transition': 17, 'wet': 32}
 - `2026-09-26 22:27:48 WAT` start **LST hot 2026**
 - `2026-09-26 22:28:12 WAT` done **LST hot 2026** in **0.4 min** (25 s) — 6 scenes → lst_hot_2026.tif
+- `2026-09-26 22:32:14 WAT` start **LST hot 2015**
+- `2026-09-26 22:32:38 WAT` done **LST hot 2015** in **0.4 min** (24 s) — 3 scenes → lst_hot_2015.tif
+- `2026-09-26 22:32:38 WAT` start **LST hot 2016**
+- `2026-09-26 22:33:04 WAT` done **LST hot 2016** in **0.4 min** (26 s) — 3 scenes → lst_hot_2016.tif
+- `2026-09-26 22:33:04 WAT` start **LST hot 2017**
+- `2026-09-26 22:33:35 WAT` done **LST hot 2017** in **0.5 min** (31 s) — 4 scenes → lst_hot_2017.tif
+- `2026-09-26 22:33:35 WAT` start **LST hot 2018**
+- `2026-09-26 22:33:47 WAT` done **LST hot 2018** in **0.2 min** (12 s) — 2 scenes → lst_hot_2018.tif
+- `2026-09-26 22:33:47 WAT` start **LST hot 2019**
+- `2026-09-26 22:34:01 WAT` done **LST hot 2019** in **0.2 min** (14 s) — 3 scenes → lst_hot_2019.tif
+- `2026-09-26 22:34:01 WAT` start **LST hot 2020**
+- `2026-09-26 22:34:13 WAT` done **LST hot 2020** in **0.2 min** (11 s) — 1 scenes → lst_hot_2020.tif
+- `2026-09-26 22:34:13 WAT` start **LST hot 2021**
+- `2026-09-26 22:34:25 WAT` done **LST hot 2021** in **0.2 min** (13 s) — 2 scenes → lst_hot_2021.tif
+- `2026-09-26 22:34:25 WAT` start **LST hot 2022**
+- `2026-09-26 22:34:43 WAT` done **LST hot 2022** in **0.3 min** (17 s) — 3 scenes → lst_hot_2022.tif
+- `2026-09-26 22:34:43 WAT` start **LST hot 2023**
+- `2026-09-26 22:34:57 WAT` done **LST hot 2023** in **0.2 min** (15 s) — 3 scenes → lst_hot_2023.tif
+- `2026-09-26 22:34:57 WAT` start **LST hot 2024**
+- `2026-09-26 22:35:14 WAT` done **LST hot 2024** in **0.3 min** (17 s) — 4 scenes → lst_hot_2024.tif
+- `2026-09-26 22:35:14 WAT` start **LST hot 2025**
+- `2026-09-26 22:35:49 WAT` done **LST hot 2025** in **0.6 min** (35 s) — 6 scenes → lst_hot_2025.tif
+- `2026-09-26 22:35:58 WAT` start **LST series** — hot
+- `2026-09-26 22:36:03 WAT` done **LST series** in **0.1 min** (5 s) — 12 years → lst_series.csv; pooled lst_hot_all.tif
+- `2026-09-26 22:36:16 WAT` start **WorldCover 10 m**
+- `2026-09-26 22:36:27 WAT` done **WorldCover 10 m** in **0.2 min** (11 s) — 2 tiles → worldcover_2021_10m.tif
+- `2026-09-26 22:36:27 WAT` start **composition classes** — table S2 on lst_hot_all
+- `2026-09-26 22:36:29 WAT` done **composition classes** in **0.0 min** (3 s) — 36 rows → composition_lst.csv
+- `2026-09-26 22:38:26 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
+- `2026-09-26 22:38:36 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
+- `2026-09-26 22:39:16 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
+- `2026-09-26 22:39:26 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
+- `2026-09-26 22:39:41 WAT` start **indices hot 2015**
+- `2026-09-26 22:41:10 WAT` done **indices hot 2015** in **1.5 min** (89 s) — 3 scenes → indices_hot_2015.tif
+- `2026-09-26 22:41:10 WAT` start **indices hot 2016**
+- `2026-09-26 22:42:12 WAT` done **indices hot 2016** in **1.0 min** (62 s) — 3 scenes → indices_hot_2016.tif
+- `2026-09-26 22:42:12 WAT` start **indices hot 2017**
+- `2026-09-26 22:43:18 WAT` done **indices hot 2017** in **1.1 min** (66 s) — 4 scenes → indices_hot_2017.tif
+- `2026-09-26 22:43:18 WAT` start **indices hot 2018**
+- `2026-09-26 22:44:36 WAT` done **indices hot 2018** in **1.3 min** (78 s) — 2 scenes → indices_hot_2018.tif
+- `2026-09-26 22:44:36 WAT` start **indices hot 2019**
+- `2026-09-26 23:26:13 WAT` stopped **indices hot 2019** — stalled 41 min on a remote read with no timeout; added GDAL HTTP timeouts and restarted
+- `2026-09-26 23:26:15 WAT` start **indices hot 2019**
+- `2026-09-26 23:27:29 WAT` done **indices hot 2019** in **1.2 min** (74 s) — 3 scenes → indices_hot_2019.tif
+- `2026-09-26 23:27:29 WAT` start **indices hot 2020**
+- `2026-09-26 23:28:11 WAT` done **indices hot 2020** in **0.7 min** (42 s) — 1 scenes → indices_hot_2020.tif
+- `2026-09-26 23:28:11 WAT` start **indices hot 2021**
+- `2026-09-26 23:29:17 WAT` done **indices hot 2021** in **1.1 min** (66 s) — 2 scenes → indices_hot_2021.tif
+- `2026-09-26 23:29:17 WAT` start **indices hot 2022**
+- `2026-09-26 23:30:31 WAT` done **indices hot 2022** in **1.2 min** (74 s) — 3 scenes → indices_hot_2022.tif
+- `2026-09-26 23:30:31 WAT` start **indices hot 2023**
+- `2026-09-26 23:31:46 WAT` done **indices hot 2023** in **1.2 min** (75 s) — 3 scenes → indices_hot_2023.tif
+- `2026-09-26 23:31:46 WAT` start **indices hot 2024**
+- `2026-09-26 23:33:09 WAT` done **indices hot 2024** in **1.4 min** (83 s) — 4 scenes → indices_hot_2024.tif
+- `2026-09-26 23:33:09 WAT` start **indices hot 2025**
+- `2026-09-26 23:35:40 WAT` done **indices hot 2025** in **2.5 min** (151 s) — 6 scenes → indices_hot_2025.tif
+- `2026-09-26 23:35:40 WAT` start **indices hot 2026**
+- `2026-09-26 23:38:25 WAT` done **indices hot 2026** in **2.7 min** (165 s) — 6 scenes → indices_hot_2026.tif
+- `2026-09-26 23:38:52 WAT` start **LST per scene** — hot
+- `2026-09-26 23:38:58 WAT` start **regression** — LST ~ NDVI + NDBI + MNDWI + BSI
+- `2026-09-26 23:39:32 WAT` done **regression** in **0.6 min** (34 s) — 13 season-years → regression.csv
+- `2026-09-26 23:40:59 WAT` done **LST per scene** in **2.1 min** (127 s) — 40 scenes; city cooler than ring in 37; fringe hotter in 38
+- `2026-09-26 23:41:55 WAT` start **LST series** — hot
+- `2026-09-26 23:42:00 WAT` done **LST series** in **0.1 min** (5 s) — 12 years → lst_series.csv; pooled lst_hot_all.tif; thermal_classes.csv

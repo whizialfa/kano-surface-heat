@@ -1,0 +1,27 @@
+metric,value,note
+hexes,5733.0,
+people,5780864.8031,GRID3 v3.0 on hexes
+pop_check_ratio,1.0,raster re-sum / hex pop
+lst_mean_area,45.9843,unweighted over hexes
+lst_weighted_pop,44.9801,"°C, population-weighted"
+under5_share_lga_min,0.1652,GRID3 age-sex applies one age structure across metro Kano
+under5_share_lga_max,0.1674,"so age groups are counts, not a differential exposure"
+over65_share_lga_min,0.0215,GRID3 age-sex applies one age structure across metro Kano
+over65_share_lga_max,0.0218,"so age groups are counts, not a differential exposure"
+hottest_decile_threshold,47.7479,"°C, hexes with ≥ 50 people"
+coolest_decile_threshold,43.6397,"°C, hexes with ≥ 50 people"
+hottest_decile_pop,122403.9103,
+coolest_decile_pop,616189.2848,
+hottest_decile_under5,20529.3851,
+coolest_decile_under5,104971.6426,
+hottest_decile_over65,2674.6545,
+coolest_decile_over65,13676.1466,
+hottest_decile_women15_49,27667.9038,
+coolest_decile_women15_49,141472.5917,
+hottest_decile_share_pop,0.0212,
+coolest_decile_share_pop,0.1066,
+hottest_quintile_threshold,47.1235,"°C, hexes with ≥ 50 people"
+hot_and_far_people,267879.16,hottest fifth and PT_k > 15 min
+hot_and_far_under5,44123.9694,
+hot_and_far_share_of_far,0.1414,"of people outside 15 minutes, share on the hottest fifth"
+r_lst_walk_popweighted,0.3578,hexes with ≥ 50 people
