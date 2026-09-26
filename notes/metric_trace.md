@@ -32,6 +32,7 @@ Anchor: Ramachandra, T. V., Rana, R. S., Vinay, S. & Aithal, B. H. (2025). Urban
 ## What we add that the anchor does not have
 
 - **People.** GRID3 / WorldPop NGA v3.0 population on the same 200 m hexes as the walking paper, plus under-5, over-65 and women 15–49 from the v3.0 age-sex layers. **The age-sex layers apply one age structure across metro Kano** (under-5s are 16.5–16.7% of every LGA, over-65s 2.2%), so they turn people into counts of children and elders but cannot show that one age group lives on hotter ground than another. We report counts, never an age-weighted temperature.
+- **Night.** The anchor and Landsat see one mid-morning moment. MODIS MOD11A2 and MYD11A2 8-day clear-sky composites (1 km; about 10:30, 13:30, 22:30 and 01:30), 2015 to 2026, all seasons, on a 1 km version of the same outline and ring (`modis.py`). A composite counts when ≥ 80% of city and ring pixels are valid. The daytime contrast is smaller at 1 km than at 30 m, so Landsat gives the daytime size and MODIS the day-night pattern.
 - **Walking.** Each hex carries its dual-access walking time to five clinics and five schools (`PT_k`) from the first paper, so heat and distance can be read together.
 - **Wards and named places.** Every quoted hot or cool area gets a ward and a GRID3 settlement name.
 - **Time.** Hot-season medians for 2014–2026, so the story can say whether the fringe is warming as it builds out.

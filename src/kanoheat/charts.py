@@ -167,9 +167,45 @@ def cool_island_by_year() -> str:
     return _save(fig, "cool_island_by_year")
 
 
+def cool_day_warm_night() -> str:
+    s = pd.read_csv(DATA_PROCESSED / "modis_summary.csv")
+    order = ("Terra 10:30", "Aqua 13:30", "Terra 22:30", "Aqua 01:30")
+    ticks = ("10:30", "13:30", "22:30", "01:30")
+    seasons = (("hot", "Hot season, March to May", BARE), ("harmattan", "Harmattan, November to February", FRINGE),
+               ("wet", "Wet season, June to September", "#2f6f9f"))
+    fig, ax = _open_plate(
+        "COOL BY DAY, WARM BY NIGHT",
+        "Kano against the farmland around it",
+        "Below zero, the city's ground is cooler than the farmland 1 to 10 km outside it.\n"
+        "In the dry seasons the city is cooler by day and warmer by night. In the rains it is warmer by day.\n"
+        "MODIS 8-day clear-sky composites, 1 km, 2015 to 2026. Ground, not air.",
+    )
+    x = np.arange(len(order))
+    w = 0.26
+    for k, (season, label, color) in enumerate(seasons):
+        vals = [s[(s["season"] == season) & (s["overpass"] == op)]["city_minus_ring_median"].squeeze() for op in order]
+        ax.bar(x + (k - 1) * w, vals, width=w, color=color, zorder=3, label=label)
+    ax.axhline(0, color=INK, lw=0.9, zorder=4)
+    ax.axvspan(1.5, 3.5, color="#1c2833", alpha=0.07, zorder=1)
+    ax.text(0.5, 2.25, "Day", ha="center", fontproperties=_fp(True, 12), color=INK)
+    ax.text(2.5, 2.25, "Night", ha="center", fontproperties=_fp(True, 12), color=INK)
+    ax.set_xticks(x)
+    ax.set_xticklabels(ticks)
+    ax.set_xlim(-0.6, 3.6)
+    ax.set_ylim(-1.0, 2.5)
+    ax.yaxis.set_major_locator(MultipleLocator(0.5))
+    leg = ax.legend(loc="upper left", frameon=False, prop=_fp(False, 11))
+    for text, (_, _, color) in zip(leg.get_texts(), seasons):
+        text.set_color(color)
+    _labels(ax, "Satellite pass, local time", "City minus rural ring, °C")
+    _ticks(ax)
+    return _save(fig, "cool_day_warm_night")
+
+
 def main() -> None:
     print(built_cells_cool())
     print(cool_island_by_year())
+    print(cool_day_warm_night())
 
 
 if __name__ == "__main__":

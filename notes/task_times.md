@@ -76,3 +76,9 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-26 23:52:40 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
 - `2026-09-26 23:53:01 WAT` start **exposure** — hexes × lst_hot_all × GRID3 age-sex
 - `2026-09-26 23:53:10 WAT` done **exposure** in **0.2 min** (10 s) — 5733 hexes → hex_heat.csv, exposure_summary.csv, ward_heat.csv
+- `2026-09-27 00:03:11 WAT` start **MODIS day and night** — modis-11A2-061, 2015-2026, months 1-12
+- `2026-09-27 00:13:54 WAT` done **MODIS day and night** in **10.7 min** (642 s) — 1022 composites → modis_summary.csv
+- `2026-09-27 00:14:33 WAT` start **LULC plate layer** — modal WorldCover per 30 m cell, polygonised
+- `2026-09-27 00:14:36 WAT` done **LULC plate layer** in **0.1 min** (3 s) — 19,095 polygons → kano_lulc_30m.gpkg
+- `2026-09-27 00:15:11 WAT` start **LULC plate layer** — modal WorldCover per 30 m cell, polygonised
+- `2026-09-27 00:15:14 WAT` done **LULC plate layer** in **0.1 min** (3 s) — 19,095 polygons → kano_lulc_30m.gpkg

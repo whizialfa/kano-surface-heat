@@ -7,13 +7,15 @@ date: September 2026
 
 # Summary
 
-In the hot dry season, metropolitan Kano is cooler than the farmland around it. In all 28 clear Landsat scenes from March and April between 2015 and 2026, the city's median surface was cooler than a ring 1 to 10 km outside it, by 1.6 °C at the median (0.3 to 2.9 °C). In the same 28 scenes the new fringe in Ungogo and Kumbotso was hotter than the old city, by 1.75 °C at the median. The pattern weakens in May, when early storms wet the fields; the three scenes that break it are all May scenes.
+By day in the hot dry season, metropolitan Kano is cooler than the farmland around it. In all 28 clear Landsat scenes from March and April between 2015 and 2026, the city's median surface at about 10:30 was cooler than a ring 1 to 10 km outside it, by 1.6 °C at the median (0.3 to 2.9 °C). In the same 28 scenes the new fringe in Ungogo and Kumbotso was hotter than the old city, by 1.75 °C at the median. The pattern weakens in May, when early storms wet the fields; the three scenes that break it are all May scenes.
+
+At night it flips. MODIS passes at 22:30 and 01:30 put the city's surface 1.4 and 1.1 °C above the rural ring in the hot season, warmer in 95% and 91% of clear eight-day composites, and the old city becomes warmer than the fringe by about 1.7 °C. Kano is a surface cool island by day and a heat island by night. The old city, the coolest ground at mid-morning, is the warmest place after dark.
 
 Built-up ground is Kano's cool ground. Every additional built-up 10 m cell in a 30 m pixel lowers its hot-season surface temperature, from 47.0 °C with none to 44.8 °C with all nine. Every additional cell of farmland or bare earth raises it, from 45.0 to 47.4 °C. Trees, shrub and grass barely change it. This reverses the ordering in Bangalore, the anchor city, where vegetation and water were the heat sinks and the policy advice was to keep 30% green cover per plot. Greenness (NDVI) has no relationship with hot-season surface heat in Kano in any year.
 
 People live on the cooler ground. The population-weighted surface temperature is 45.0 °C, a full degree below the average hexagon (46.0 °C). The hottest tenth of populated hexagons holds 122,000 people (2.1%); the coolest tenth holds 616,000. The heat that does reach homes sits on the farmland edge: Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso. Almost everyone on that hot ground is also far from services: of the 276,000 people on the hottest fifth of populated ground, 95% are more than 15 minutes' walk from five clinics and five schools. That is 261,000 people, 42,000 of them under five. Across the city, hotter hexagons are farther from services (population-weighted r = 0.36).
 
-This is surface temperature, not air temperature. A cool roof is not a cool bedroom. The claim is about where the ground is hottest and what covers it.
+This is surface temperature, not air temperature. The claim is about where the ground is hottest, when, and what covers it.
 
 # 1. Question and anchor
 
@@ -32,6 +34,8 @@ This paper asks the same question of Kano, a semi-arid Sahelian city ringed by d
 **Spectral indices.** NDVI, NDBI, MNDWI and the bare-soil index from the same scenes, medians per season. As in the anchor: 1,000 random pixels, simple correlations and a four-index linear model; added: the same model on all 636,483 pixels, variance inflation factors and Moran's I of the residuals.
 
 **People and walking.** Hexagon population from GRID3 v3.0; under-5, over-65 and women 15 to 49 from the v3.0 age-sex layers. Each hexagon carries its dual-access walking time to five clinics and five schools (PT_k) from the walking paper.
+
+**Day and night.** Landsat sees Kano only at about 10:30. MODIS MOD11A2 (Terra, about 10:30 and 22:30) and MYD11A2 (Aqua, about 13:30 and 01:30) 8-day clear-sky composites at 1 km, 2015 to 2026, all seasons, give four times of day. They are warped onto a 1 km version of the same grid, outline, ring and old-city/fringe split; a composite counts only when at least 80% of both city and ring pixels are valid. 1,022 composites.
 
 # 3. Results
 
@@ -62,6 +66,8 @@ Across the pooled surface, local government medians run from Kano Municipal (44.
 *Mean hot-season LST, pooled 2015 to 2026. Share of the city's pixels in brackets. Source: `composition_lst.csv`.*
 
 Read the anchor's way, Kano's all-vegetation pixels are its hottest ground, because most of what WorldCover calls vegetation is cropland that is bare in March. Read the Sahel's way, bare ground is hottest, as in Bangalore, but pure built-up pixels are still 1.1 °C cooler than the remaining trees, shrub and grass, and 2.6 °C cooler than bare fields. Only open water is cooler than the built city.
+
+The plate *Land cover in Kano* (`maps/kano_lulc_plate.png`) shows the most common WorldCover class in each 30 m cell. Built-up covers 45% of the metropolitan area, cropland 40%, grass 10% and trees 2% (`lulc_shares.csv`). Set beside *Hot ground in Kano*, the grey built-up core is the cool blue and the gold cropland ring is the red.
 
 The gradient (Figure 1, `composition_gradient.csv`) shows the same thing without classes:
 
@@ -111,15 +117,31 @@ Two plates carry this section: *Hot ground in Kano* (`maps/kano_heat_plate.png`)
 
 Kumbotso is not uniformly hot. Its dense inner wards, Dan Maliki and Naibawa, are among the coolest ground in the city. The heat is where farmland still meets new building.
 
+## 3.5 Cool by day, warm by night
+
+| Season | 10:30 | 13:30 | 22:30 | 01:30 |
+|---|---|---|---|---|
+| Hot, March to May | −0.33 (74% cooler) | −0.38 (74%) | **+1.39** (5%) | **+1.14** (9%) |
+| Harmattan, November to February | +0.04 (44%) | −0.40 (75%) | **+1.90** (0%) | **+1.88** (1%) |
+| Wet, June to September | +1.49 (6%) | +1.31 (13%) | +0.10 (31%) | +0.10 (34%) |
+
+*City minus rural ring, median of MODIS 8-day composites, °C. In brackets, the share of composites in which the city was cooler. Source: `modis_summary.csv`.*
+
+In both dry seasons the city is the cooler ground by day and the warmer ground by night. Bare fields lose their heat quickly after sunset; walls, roofs and paving give theirs back slowly. The same flip shows inside the outline: in the hot season the fringe is 0.1 to 0.3 °C hotter than the old city by day and 1.7 to 1.8 °C cooler at night, cooler in 99% of night composites. In the wet season the fields are green and wet, and the city is warmer by day (1.3 to 1.5 °C) and roughly level at night: the textbook heat island, for four months of the year.
+
+MODIS agrees with Landsat on the sign of the daytime contrast but gives a smaller value (−0.3 against −1.6 °C). A 1 km pixel mixes compounds, fields and villages that Landsat separates at 30 m, and an 8-day composite averages several days and viewing angles. We quote Landsat for the daytime size and MODIS for the day-night flip.
+
+The walking-and-heat plate is a daytime map. At night the ranking of places reverses: the dense wards that are coolest at 10:30 are the warmest at 01:30, and the hot-and-far fringe cools fastest.
+
 # 4. Discussion
 
-Kano behaves like other dry cities: by day in the dry season its built fabric is cooler than the bare fields around it. Earth and cement compounds, narrow shaded lanes, courtyard trees and irrigated gardens along the rivers all keep the surface below that of open, sunlit, dry soil. The anchor's advice, more vegetation per plot, is right for Bangalore and weak for Kano in March: what cools here is shade and moisture, not greenness as a satellite measures it.
+Kano behaves like other dry cities: by day in the dry season its built fabric is cooler than the bare fields around it, and by night it is warmer. Earth and cement compounds, narrow shaded lanes, courtyard trees and irrigated gardens along the rivers keep the daytime surface below that of open, sunlit, dry soil; the same walls and roofs store that heat and release it after dark. The anchor's advice, more vegetation per plot, is right for Bangalore and weak for Kano in March: what cools here by day is shade and moisture, not greenness as a satellite measures it.
 
-The finding that matters for planning is the edge. Kano's growth in Ungogo and Kumbotso is building onto the hottest ground in the metropolitan area, and the people already there are the ones farthest from clinics and schools. The walking paper found the later population living in Ungogo and Kumbotso while services stayed in the old city. This paper adds that the same families are on the hottest ground.
+Two findings matter for planning, and they point at different places. By day it is the edge. Kano's growth in Ungogo and Kumbotso is building onto the hottest daytime ground in the metropolitan area, and the people already there are the ones farthest from clinics and schools. The walking paper found the later population living in Ungogo and Kumbotso while services stayed in the old city; this paper adds that the same families are on the hottest ground at midday. By night it is the old city. The dense wards that shelter people at 10:30 hold the most heat at 01:30, in the months when nights matter most for rest. Neither is visible from a single morning scene, which is what the anchor relied on.
 
 # 5. Limits
 
-- Land surface temperature is not air temperature or heat stress. There is no humidity, wind or night-time signal here; Landsat passes at about 10:30 local time.
+- Land surface temperature is not air temperature or heat stress. There is no humidity or wind here, and the night-time signal is at 1 km from MODIS, not at the 30 m of the daytime maps.
 - The land-use map is from 2021 and the surface series runs to 2026. Fringe land that was farmland in 2021 may now be built.
 - WorldCover's vegetation and cropland classes are not a field survey, and the anchor's composition table is ambiguous; the gradient is the robust version.
 - Population and age-sex rasters are modelled, not counted, and the age structure is uniform across the city.
@@ -129,7 +151,8 @@ The finding that matters for planning is the edge. Kano's growth in Ungogo and K
 
 **LST.** Land surface temperature: how hot the ground, roof or canopy is, measured from orbit.
 **Rural ring.** Land 1 to 10 km outside the study outline, used as the reference.
-**Surface cool island.** A city whose surface is cooler than its surroundings.
+**Surface cool island.** A city whose surface is cooler than its surroundings. Kano is one by day in the dry seasons and a heat island by night.
+**MODIS composite.** An 8-day average of clear-sky surface temperature at 1 km, from the Terra (about 10:30 and 22:30) or Aqua (about 13:30 and 01:30) satellite.
 **Composition class.** The anchor's twelve labels for the mix of built-up, bare, green and water cells inside one 30 m pixel.
 **NDVI, NDBI, MNDWI, bare-soil index.** Spectral indices for greenness, built-up surface, water and moisture, and bare soil.
 **UTFVI.** Urban thermal field variance index: each pixel's LST relative to the city mean. On the standard scale in kelvin, 1.7% of Kano is "strong" or worse (Bangalore reports 76% unfavourable); the index is relative to each city's own mean, so shares do not compare across cities.
@@ -142,6 +165,8 @@ Ramachandra, T. V., Rana, R. S., Vinay, S. & Aithal, B. H. (2025). Urban heat is
 Zanaga, D. et al. (2022). ESA WorldCover 10 m 2021 v200. https://doi.org/10.5281/zenodo.7254221
 
 U.S. Geological Survey. Landsat 8–9 Collection 2 Level-2 Science Products.
+
+Wan, Z., Hook, S. & Hulley, G. (2021). MODIS/Terra and MODIS/Aqua Land Surface Temperature/Emissivity 8-Day L3 Global 1 km SIN Grid V061 (MOD11A2, MYD11A2). NASA EOSDIS Land Processes DAAC.
 
 GRID3 (2025). Nigeria gridded population estimates v3.0 and age-sex structures.
 
