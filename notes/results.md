@@ -11,6 +11,8 @@ By day in the hot dry season, metropolitan Kano is cooler than the farmland arou
 
 At night it flips. MODIS passes at 22:30 and 01:30 put the city's surface 1.4 and 1.1 °C above the rural ring in the hot season, warmer in 95% and 91% of clear eight-day composites, and the old city becomes warmer than the fringe by about 1.7 °C. Kano is a surface cool island by day and a heat island by night. The old city, the coolest ground at mid-morning, is the warmest place after dark.
 
+Kano is building onto that hot fringe, and building cools it by day. Built-up land grew from 38% to 52% of the metropolitan area between 2015 and 2026. Farmland that became city cooled by 0.3 to 0.6 °C relative to farmland that stayed open, on independent land cover.
+
 Built-up ground is Kano's cool ground. Every additional built-up 10 m cell in a 30 m pixel lowers its hot-season surface temperature, from 47.0 °C with none to 44.8 °C with all nine. Every additional cell of farmland or bare earth raises it, from 45.0 to 47.4 °C. Trees, shrub and grass barely change it. This reverses the ordering in Bangalore, the anchor city, where vegetation and water were the heat sinks and the policy advice was to keep 30% green cover per plot. Greenness (NDVI) has no relationship with hot-season surface heat in Kano in any year.
 
 People live on the cooler ground. The population-weighted surface temperature is 45.0 °C, a full degree below the average hexagon (46.0 °C). The hottest tenth of populated hexagons holds 122,000 people (2.1%); the coolest tenth holds 616,000. The heat that does reach homes sits on the farmland edge: Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso. Almost everyone on that hot ground is also far from services: of the 276,000 people on the hottest fifth of populated ground, 95% are more than 15 minutes' walk from five clinics and five schools. That is 261,000 people, 42,000 of them under five. Across the city, hotter hexagons are farther from services (population-weighted r = 0.36).
@@ -34,6 +36,8 @@ This paper asks the same question of Kano, a semi-arid Sahelian city ringed by d
 **Spectral indices.** NDVI, NDBI, MNDWI and the bare-soil index from the same scenes, medians per season. As in the anchor: 1,000 random pixels, simple correlations and a four-index linear model; added: the same model on all 636,483 pixels, variance inflation factors and Moran's I of the residuals.
 
 **People and walking.** Hexagon population from GRID3 v3.0; under-5, over-65 and women 15 to 49 from the v3.0 age-sex layers. Each hexagon carries its dual-access walking time to five clinics and five schools (PT_k) from the walking paper.
+
+**Land cover for every year.** WorldCover is a single 2021 map. For each year from 2015 to 2026 we classify our own land cover from the same clear Landsat scenes: hot-season and wet-season reflectance composites (six bands each) with NDVI, NDBI, MNDWI and the bare-soil index, because dry-season farmland is bare in March and green in August. A random forest is trained on 30 m cells whose nine WorldCover cells agree in both 2020 and 2021 (six classes: built-up, cropland, bare ground, grass and shrub, trees, water). Spatially blocked cross-validation gives 85.6% overall accuracy (kappa 0.83); built-up F1 0.87, grass and shrub weakest at 0.71. Class probabilities are averaged over three years, which fills cloud gaps and damps one-year flips. Impact Observatory's annual 10 m maps (Sentinel-2, 2017 to 2023) are the independent check.
 
 **Day and night.** Landsat sees Kano only at about 10:30. MODIS MOD11A2 (Terra, about 10:30 and 22:30) and MYD11A2 (Aqua, about 13:30 and 01:30) 8-day clear-sky composites at 1 km, 2015 to 2026, all seasons, give four times of day. They are warped onto a 1 km version of the same grid, outline, ring and old-city/fringe split; a composite counts only when at least 80% of both city and ring pixels are valid. 1,022 composites.
 
@@ -133,6 +137,24 @@ MODIS agrees with Landsat on the sign of the daytime contrast but gives a smalle
 
 The walking-and-heat plate is a daytime map. At night the ranking of places reverses: the dense wards that are coolest at 10:30 are the warmest at 01:30, and the hot-and-far fringe cools fastest.
 
+## 3.6 Building on farmland cools the ground by day
+
+Built-up land grew from 38% of the metropolitan area in 2015 to 52% in 2026 on our smoothed maps. Impact Observatory puts it at 47% in 2017 and 59% in 2023: higher, but moving the same way. We quote growth as a range backed by both.
+
+For each hexagon we compare 2015–17 with 2024–26. Heat is the hexagon's hot-season surface temperature minus that year's rural-ring median, so a hot or cool year does not pass for change. The fair comparison is farmland that was built over against farmland that stayed open.
+
+| Land cover used | Period | Built-over hexagons | Built-up then → now | Built over minus stayed open |
+|---|---|---|---|---|
+| Impact Observatory (Sentinel-2, independent) | 2017–18 → 2022–23 | 417 | 6% → 83% | **−0.3 °C (median −0.6)** |
+| Ours (Landsat) | 2017–18 → 2022–23 | 117 | 15% → 67% | −1.5 °C (median −1.6) |
+| Ours (Landsat) | 2015–17 → 2024–26 | 378 | 13% → 72% | −1.4 °C (median −1.5) |
+
+*Built over: under 25% built-up in the early period, at least 50% in the late period. Stayed open: under 25% in both. Sources: `change_summary.csv`, `change_summary_io.csv`.*
+
+Farmland that became city cooled by day relative to farmland that stayed open, whichever land cover is used. The size depends on it. Our Landsat classes and the heat come from the same scenes, and on the same years our maps flag far fewer hexagons than Impact Observatory, the ones whose Landsat signal changed most; that inflates the effect. The independent figure, 0.3 to 0.6 °C, is the one to quote, with ours as an upper bound. The plate *Where farmland became city* (`maps/kano_change_plate.png`) shows where: Gayawa, Rangaza, Kadawa and Tudun Fulani in Ungogo; Garun Gawa, Kureken Sani, Danbare and Mariri in Kumbotso. The 378 built-over neighbourhoods on our maps are home to 320,000 people today.
+
+Read with section 3.5, this is a daytime result. The same walls that cool the fringe at 10:30 are the ones that keep the old city warm at 01:30.
+
 # 4. Discussion
 
 Kano behaves like other dry cities: by day in the dry season its built fabric is cooler than the bare fields around it, and by night it is warmer. Earth and cement compounds, narrow shaded lanes, courtyard trees and irrigated gardens along the rivers keep the daytime surface below that of open, sunlit, dry soil; the same walls and roofs store that heat and release it after dark. The anchor's advice, more vegetation per plot, is right for Bangalore and weak for Kano in March: what cools here by day is shade and moisture, not greenness as a satellite measures it.
@@ -142,7 +164,7 @@ Two findings matter for planning, and they point at different places. By day it 
 # 5. Limits
 
 - Land surface temperature is not air temperature or heat stress. There is no humidity or wind here, and the night-time signal is at 1 km from MODIS, not at the 30 m of the daytime maps.
-- The land-use map is from 2021 and the surface series runs to 2026. Fringe land that was farmland in 2021 may now be built.
+- The composition analysis uses WorldCover 2021; the yearly land cover is our own classification (85.6% on pure, stable cells, lower on mixed edge pixels) and shares scenes with the heat, so the change effect is quoted from the independent Impact Observatory maps.
 - WorldCover's vegetation and cropland classes are not a field survey, and the anchor's composition table is ambiguous; the gradient is the robust version.
 - Population and age-sex rasters are modelled, not counted, and the age structure is uniform across the city.
 - Scene counts vary from one to six a year, so year-to-year absolute temperatures reflect which days were clear. Only contrasts within a date are compared across years.
@@ -165,6 +187,8 @@ Ramachandra, T. V., Rana, R. S., Vinay, S. & Aithal, B. H. (2025). Urban heat is
 Zanaga, D. et al. (2022). ESA WorldCover 10 m 2021 v200. https://doi.org/10.5281/zenodo.7254221
 
 U.S. Geological Survey. Landsat 8–9 Collection 2 Level-2 Science Products.
+
+Karra, K. et al. (2021). Global land use / land cover with Sentinel-2 and deep learning. IGARSS 2021 (Impact Observatory annual LULC, v02).
 
 Wan, Z., Hook, S. & Hulley, G. (2021). MODIS/Terra and MODIS/Aqua Land Surface Temperature/Emissivity 8-Day L3 Global 1 km SIN Grid V061 (MOD11A2, MYD11A2). NASA EOSDIS Land Processes DAAC.
 
