@@ -10,6 +10,8 @@ Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every 
 
 **Kano is cooler than its farmland by day and warmer by night.** In all 28 clear Landsat scenes from March and April, 2015 to 2026, the city's median surface at about 10:30 was cooler than a ring 1 to 10 km outside it (median −1.6 °C) and the fringe of Ungogo and Kumbotso was hotter than the old city (median +1.75 °C). MODIS night passes flip it: at 22:30 and 01:30 in the hot season the city is 1.4 and 1.1 °C warmer than the ring, in 95% and 91% of clear composites, and the old city is the warmest ground. In the rains the city is warmer by day instead.
 
+**Kano is building onto its hot fringe, and building cools it by day.** On our own yearly land cover (Landsat, 85.6% accurate under blocked cross-validation), built-up land grew from 38% to 52% of the metro between 2015 and 2026; Impact Observatory shows the same rise. Farmland that became city cooled by day by 0.3 to 0.6 °C relative to farmland that stayed open on the independent maps (1.4 °C on ours, an upper bound).
+
 **Built-up ground is the cool ground.** Each extra built-up 10 m cell in a 30 m pixel lowers hot-season surface temperature, from 47.0 °C with none to 44.8 °C with nine of nine. Farmland and bare earth raise it (45.0 to 47.4 °C). Trees, shrub and grass barely move it. Greenness (NDVI) has no relationship with surface heat in any year (r −0.04 to +0.20; Bangalore −0.46).
 
 **People mostly live on cooler ground, except on the farmland edge.** Population-weighted surface temperature is 45.0 °C against 46.0 °C for the average hexagon. 95% of the people on the hottest fifth of populated ground are also more than 15 minutes' walk from clinics and schools: 261,000 people, 42,000 of them under five. The hottest populated wards are Karo, Yada Kunya, Rangaza and Fanisau in Ungogo, and Chalawa in Kumbotso.
@@ -17,7 +19,8 @@ Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every 
 | | |
 |---|---|
 | ![Land cover in Kano](maps/kano_lulc_plate.png) | ![Hot ground in Kano](maps/kano_heat_plate.png) |
-| ![Hot ground and long walks](maps/kano_heat_walk_plate.png) | ![Cool by day, warm by night](charts/cool_day_warm_night.png) |
+| ![Hot ground and long walks](maps/kano_heat_walk_plate.png) | ![Where farmland became city](maps/kano_change_plate.png) |
+| ![Cool by day, warm by night](charts/cool_day_warm_night.png) | |
 | ![Built-up cells cool the ground](charts/built_cells_cool.png) | ![Cooler than its farmland, each hot season](charts/cool_island_by_year.png) |
 
 Plates are A3 PNG and PDF in `maps/`, built by `qgis/build_heat_plates.py` with QGIS's Python (`env -u PYTHONPATH /Applications/QGIS.app/Contents/MacOS/bin/python3.9 qgis/build_heat_plates.py`). The furniture is imported from the walking paper's builder, so both papers print as one family.
@@ -44,7 +47,10 @@ python -m kanoheat.indices --years 2015-2026       # spectral indices (≈15 min
 python -m kanoheat.regression
 python -m kanoheat.exposure                        # hexes, people, wards, walking time
 python -m kanoheat.modis --all-seasons             # MODIS day/night, 4 passes a day (≈11 min)
-python -m kanoheat.lulc                            # land-cover layer for the plate
+python -m kanoheat.lulc                            # WorldCover layer for the plate
+python -m kanoheat.composite                       # hot and wet reflectance composites per year (≈45 min)
+python -m kanoheat.landcover                       # references, classifier, yearly maps, smoothing, shares
+python -m kanoheat.change                          # built-over farmland against farmland that stayed open
 python -m kanoheat.charts
 ```
 
@@ -52,4 +58,4 @@ Analysis Python is `/opt/anaconda3/bin/python3.12`. Rasters land in `data/raw/` 
 
 ## Next
 
-A 2023 land-cover update, then the short brief and the colour PDF.
+The short brief and the colour PDF.

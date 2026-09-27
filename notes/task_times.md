@@ -236,3 +236,9 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-27 01:50:34 WAT` start **land cover smoothing** — three-year mean of class probabilities
 - `2026-09-27 01:50:44 WAT` done **land cover smoothing** in **0.4 min** (23 s) — 12 years
 - `2026-09-27 01:50:57 WAT` done **land cover smoothing** in **0.4 min** (23 s) — 12 years
+- `2026-09-27 08:53:50 WAT` start **land-cover change test** — hexes, 2015–17 against 2024–26
+- `2026-09-27 08:53:51 WAT` done **land-cover change test** in **0.0 min** (1 s) — 5733 hexes → change_summary.csv
+- `2026-09-27 08:54:16 WAT` start **land-cover change test** — hexes, 2015–17 against 2024–26
+- `2026-09-27 08:54:21 WAT` done **land-cover change test** in **0.1 min** (5 s) — 5733 hexes → change_summary.csv
+- `2026-09-27 08:55:11 WAT` start **land-cover change test** — hexes, 2015–17 against 2024–26
+- `2026-09-27 08:55:16 WAT` done **land-cover change test** in **0.1 min** (5 s) — 5733 hexes → change_summary.csv

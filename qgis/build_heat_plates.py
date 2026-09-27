@@ -78,6 +78,15 @@ LULC_BREAKS = [
 ]
 
 
+# Codes from kanoheat.change.PLATE_CODE.
+CHANGE_BREAKS = [
+    (0.5, 1.5, "232,112,38,225", "Built over"),
+    (1.5, 2.5, "236,146,120,205", "Partly built"),
+    (2.5, 3.5, f"158,76,66,{FILL_ALPHA}", "Already built"),
+    (3.5, 4.5, "240,226,172,190", "Stayed open"),
+]
+
+
 def _layers():
     osm = QgsRasterLayer(
         "type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0&crs=EPSG3857",
@@ -103,7 +112,9 @@ def _layers():
     bcp._graduated(heat_walk, "heat_walk", HEAT_WALK_BREAKS)
     lulc = bcp._vector(PROCESSED / "kano_lulc_30m.gpkg", "kano_lulc_30m", "5 Land cover (WorldCover 2021, 30 m)")
     bcp._graduated(lulc, "code", LULC_BREAKS, outline_width="0")
-    return osm, boundary, wards, places, heat, heat_walk, lulc
+    change = bcp._vector(PROCESSED / "kano_hex_change.gpkg", "kano_hex_change", "6 Built-up change, 2015–17 to 2024–26")
+    bcp._graduated(change, "change_code", CHANGE_BREAKS)
+    return osm, boundary, wards, places, heat, heat_walk, lulc, change
 
 
 def main() -> None:
@@ -119,10 +130,10 @@ def main() -> None:
     project.setPresetHomePath(str(HERE))
     project.setFileName(str(out))
 
-    osm, boundary, wards, places, heat, heat_walk, lulc = _layers()
-    for layer in (osm, lulc, heat, heat_walk, wards, places, boundary):
+    osm, boundary, wards, places, heat, heat_walk, lulc, change = _layers()
+    for layer in (osm, lulc, change, heat, heat_walk, wards, places, boundary):
         project.addMapLayer(layer, True)
-    for hidden in (heat_walk, lulc):
+    for hidden in (heat_walk, lulc, change):
         node = project.layerTreeRoot().findLayer(hidden.id())
         if node:
             node.setItemVisibilityChecked(False)
@@ -186,6 +197,26 @@ def main() -> None:
         ),
         legend_title="Land cover",
         export_stem="lulc_plate",
+    )
+    print(f"  → {png.name}", flush=True)
+
+    png = bcp._kigali_layout(
+        project,
+        SLUG,
+        layout_name="Built-up change",
+        choropleth=change,
+        overlays=overlays,
+        osm=osm,
+        extent_wgs=heat.extent(),
+        title="WHERE FARMLAND BECAME CITY",
+        subtitle="Kano, 2015 to 2026",
+        caption=(
+            "Each cell is a 200-metre neighbourhood, compared between 2015–17 and 2024–26. "
+            "Orange was farmland and is now mostly built: 378 neighbourhoods, 320,000 people. "
+            "Red was already built; gold stayed open."
+        ),
+        legend_title="Since 2015",
+        export_stem="change_plate",
     )
     print(f"  → {png.name}", flush=True)
 

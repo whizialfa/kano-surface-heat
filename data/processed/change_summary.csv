@@ -1,0 +1,7 @@
+group,hexes,people_now,built_early,built_late,heat_early,heat_late,d_heat_mean,d_heat_median,d_heat_iqr
+built over,378.0,319852.0,0.131,0.722,-0.26,-2.38,-2.12,-2.2,-3.19 to -1.19
+stayed open,2120.0,187375.0,0.036,0.058,0.46,-0.27,-0.73,-0.67,-1.38 to -0.01
+already built,1467.0,3827404.0,0.926,0.958,-2.01,-2.66,-0.65,-0.71,-1.27 to -0.09
+other,1768.0,1446234.0,0.423,0.622,-0.98,-2.11,-1.13,-1.13,-1.94 to -0.23
+built over minus stayed open,,,,,,,-1.39,-1.53,
+"slope, all hexes",5733.0,,,,,,-0.184,,°C per 10 points of built-up; R² 0.100

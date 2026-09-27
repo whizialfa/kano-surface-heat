@@ -1,0 +1,7 @@
+source,group,hexes,people_now,built_early,built_late,heat_early,heat_late,d_heat_mean,d_heat_median,d_heat_iqr
+Impact Observatory 2017–2018 vs 2022–2023,built over,417.0,181523.0,0.058,0.831,-0.55,-0.81,-0.26,-0.66,-1.57 to 0.61
+Impact Observatory 2017–2018 vs 2022–2023,stayed open,2239.0,199597.0,0.003,0.019,0.0,0.02,0.01,-0.04,-1.10 to 0.76
+Impact Observatory 2017–2018 vs 2022–2023,already built,2453.0,5078278.0,0.982,0.994,-2.46,-2.75,-0.28,-0.29,-1.17 to 0.55
+Impact Observatory 2017–2018 vs 2022–2023,other,624.0,321467.0,0.361,0.669,-0.99,-1.29,-0.31,-0.62,-1.39 to 0.36
+Impact Observatory 2017–2018 vs 2022–2023,built over minus stayed open,,,,,,,-0.28,-0.62,
+Impact Observatory 2017–2018 vs 2022–2023,"slope, all hexes",5733.0,,,,,,-0.033,,°C per 10 points of built-up; R² 0.002
