@@ -82,3 +82,157 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-27 00:14:36 WAT` done **LULC plate layer** in **0.1 min** (3 s) — 19,095 polygons → kano_lulc_30m.gpkg
 - `2026-09-27 00:15:11 WAT` start **LULC plate layer** — modal WorldCover per 30 m cell, polygonised
 - `2026-09-27 00:15:14 WAT` done **LULC plate layer** in **0.1 min** (3 s) — 19,095 polygons → kano_lulc_30m.gpkg
+- `2026-09-27 00:29:39 WAT` start **composite hot 2015**
+- `2026-09-27 00:30:43 WAT` start **land-cover references** — WorldCover 2020–2021, Impact Observatory 2017–2023
+- `2026-09-27 00:31:01 WAT` done **composite hot 2015** in **1.4 min** (82 s) — 3 scenes → hot_2015.tif
+- `2026-09-27 00:31:01 WAT` start **composite wet 2015**
+- `2026-09-27 00:31:49 WAT` done **land-cover references** in **1.1 min** (66 s) — worldcover 2020: 2 tiles; worldcover 2021: 2 tiles; io 2017: 1 tiles; io 2018: 1 tiles; io 2019: 1 tiles; io 2020: 1 tiles; io 2021: 1 tiles; io 2022: 1 tiles; io 2023: 1 tiles
+- `2026-09-27 00:32:35 WAT` done **composite wet 2015** in **1.6 min** (94 s) — 2 scenes → wet_2015.tif
+- `2026-09-27 00:32:35 WAT` start **composite hot 2016**
+- `2026-09-27 00:33:35 WAT` done **composite hot 2016** in **1.0 min** (60 s) — 3 scenes → hot_2016.tif
+- `2026-09-27 00:33:35 WAT` start **composite wet 2016**
+- `2026-09-27 00:34:52 WAT` done **composite wet 2016** in **1.3 min** (77 s) — 3 scenes → wet_2016.tif
+- `2026-09-27 00:34:52 WAT` start **composite hot 2017**
+- `2026-09-27 00:36:27 WAT` done **composite hot 2017** in **1.6 min** (95 s) — 4 scenes → hot_2017.tif
+- `2026-09-27 00:36:27 WAT` start **composite wet 2017**
+- `2026-09-27 00:37:41 WAT` done **composite wet 2017** in **1.2 min** (74 s) — 2 scenes → wet_2017.tif
+- `2026-09-27 00:37:41 WAT` start **composite hot 2018**
+- `2026-09-27 00:43:49 WAT` done **composite hot 2018** in **2.5 min** (153 s) — 2 scenes → hot_2018.tif
+- `2026-09-27 00:43:49 WAT` start **composite wet 2018**
+- `2026-09-27 00:48:41 WAT` done **composite wet 2018** in **2.1 min** (129 s) — 2 scenes → wet_2018.tif
+- `2026-09-27 00:48:41 WAT` start **composite hot 2019**
+- `2026-09-27 00:50:30 WAT` done **composite hot 2019** in **1.8 min** (110 s) — 3 scenes → hot_2019.tif
+- `2026-09-27 00:50:30 WAT` start **composite wet 2019**
+- `2026-09-27 00:53:11 WAT` done **composite wet 2019** in **2.2 min** (131 s) — 2 scenes → wet_2019.tif
+- `2026-09-27 00:53:11 WAT` start **composite hot 2020**
+- `2026-09-27 00:54:12 WAT` done **composite hot 2020** in **1.0 min** (61 s) — 1 scenes → hot_2020.tif
+- `2026-09-27 00:54:12 WAT` start **composite wet 2020**
+- `2026-09-27 00:55:14 WAT` done **composite wet 2020** in **1.0 min** (62 s) — 1 scenes → wet_2020.tif
+- `2026-09-27 00:55:14 WAT` start **composite hot 2021**
+- `2026-09-27 00:56:59 WAT` done **composite hot 2021** in **1.7 min** (104 s) — 2 scenes → hot_2021.tif
+- `2026-09-27 00:56:59 WAT` start **composite wet 2021**
+- `2026-09-27 00:57:59 WAT` done **composite wet 2021** in **1.0 min** (60 s) — 1 scenes → wet_2021.tif
+- `2026-09-27 00:57:59 WAT` start **composite hot 2022**
+- `2026-09-27 00:58:43 WAT` start **land-cover classifier** — random forest on stable WorldCover 2020–2021 cells
+- `2026-09-27 00:59:48 WAT` done **composite hot 2022** in **1.8 min** (110 s) — 3 scenes → hot_2022.tif
+- `2026-09-27 00:59:48 WAT` start **composite wet 2022**
+- `2026-09-27 00:59:55 WAT` done **land-cover classifier** in **1.2 min** (72 s) — blocked CV overall accuracy 0.8561
+- `2026-09-27 01:00:35 WAT` done **composite wet 2022** in **0.8 min** (46 s) — 1 scenes → wet_2022.tif
+- `2026-09-27 01:00:35 WAT` start **composite hot 2023**
+- `2026-09-27 01:02:02 WAT` done **composite hot 2023** in **1.5 min** (87 s) — 3 scenes → hot_2023.tif
+- `2026-09-27 01:02:02 WAT` start **composite wet 2023**
+- `2026-09-27 01:03:36 WAT` done **composite wet 2023** in **1.6 min** (94 s) — 2 scenes → wet_2023.tif
+- `2026-09-27 01:03:36 WAT` start **composite hot 2024**
+- `2026-09-27 01:05:33 WAT` done **composite hot 2024** in **1.9 min** (117 s) — 4 scenes → hot_2024.tif
+- `2026-09-27 01:05:33 WAT` start **composite wet 2024**
+- `2026-09-27 01:08:25 WAT` done **composite wet 2024** in **2.9 min** (172 s) — 5 scenes → wet_2024.tif
+- `2026-09-27 01:08:25 WAT` start **composite hot 2025**
+- `2026-09-27 01:11:19 WAT` done **composite hot 2025** in **2.9 min** (174 s) — 6 scenes → hot_2025.tif
+- `2026-09-27 01:11:19 WAT` start **composite wet 2025**
+- `2026-09-27 01:12:39 WAT` done **composite wet 2025** in **1.3 min** (80 s) — 2 scenes → wet_2025.tif
+- `2026-09-27 01:12:39 WAT` start **composite hot 2026**
+- `2026-09-27 01:15:33 WAT` start **land cover 2015**
+- `2026-09-27 01:15:52 WAT` done **land cover 2015** in **0.3 min** (19 s) — lulc_2015.tif
+- `2026-09-27 01:15:52 WAT` start **land cover 2016**
+- `2026-09-27 01:16:11 WAT` done **land cover 2016** in **0.3 min** (19 s) — lulc_2016.tif
+- `2026-09-27 01:16:11 WAT` start **land cover 2017**
+- `2026-09-27 01:16:37 WAT` done **land cover 2017** in **0.4 min** (27 s) — lulc_2017.tif
+- `2026-09-27 01:16:37 WAT` start **land cover 2018**
+- `2026-09-27 01:17:03 WAT` done **land cover 2018** in **0.4 min** (26 s) — lulc_2018.tif
+- `2026-09-27 01:17:03 WAT` start **land cover 2019**
+- `2026-09-27 01:17:29 WAT` done **land cover 2019** in **0.4 min** (26 s) — lulc_2019.tif
+- `2026-09-27 01:17:29 WAT` start **land cover 2020**
+- `2026-09-27 01:17:58 WAT` done **land cover 2020** in **0.5 min** (29 s) — lulc_2020.tif
+- `2026-09-27 01:17:58 WAT` start **land cover 2021**
+- `2026-09-27 01:18:31 WAT` done **land cover 2021** in **0.5 min** (33 s) — lulc_2021.tif
+- `2026-09-27 01:18:31 WAT` start **land cover 2022**
+- `2026-09-27 01:18:33 WAT` start **composite hot 2026**
+- `2026-09-27 01:18:51 WAT` done **land cover 2022** in **0.3 min** (20 s) — lulc_2022.tif
+- `2026-09-27 01:18:51 WAT` start **land cover 2023**
+- `2026-09-27 01:19:09 WAT` done **land cover 2023** in **0.3 min** (18 s) — lulc_2023.tif
+- `2026-09-27 01:19:09 WAT` start **land cover 2024**
+- `2026-09-27 01:19:29 WAT` done **land cover 2024** in **0.3 min** (20 s) — lulc_2024.tif
+- `2026-09-27 01:19:29 WAT` start **land cover 2025**
+- `2026-09-27 01:19:57 WAT` done **land cover 2025** in **0.5 min** (28 s) — lulc_2025.tif
+- `2026-09-27 01:19:57 WAT` start **land cover 2026**
+- `2026-09-27 01:20:57 WAT` done **composite hot 2026** in **2.4 min** (144 s) — 6 scenes → hot_2026.tif
+- `2026-09-27 01:20:57 WAT` start **composite wet 2026**
+- `2026-09-27 01:22:20 WAT` done **composite wet 2026** in **1.4 min** (83 s) — 3 scenes → wet_2026.tif
+- `2026-09-27 01:22:44 WAT` start **land cover 2015**
+- `2026-09-27 01:23:03 WAT` done **land cover 2015** in **0.3 min** (19 s) — lulc_2015.tif
+- `2026-09-27 01:23:03 WAT` start **land cover 2016**
+- `2026-09-27 01:23:24 WAT` done **land cover 2016** in **0.3 min** (20 s) — lulc_2016.tif
+- `2026-09-27 01:23:24 WAT` start **land cover 2017**
+- `2026-09-27 01:23:44 WAT` done **land cover 2017** in **0.3 min** (20 s) — lulc_2017.tif
+- `2026-09-27 01:23:44 WAT` start **land cover 2018**
+- `2026-09-27 01:24:23 WAT` done **land cover 2018** in **0.6 min** (39 s) — lulc_2018.tif
+- `2026-09-27 01:24:23 WAT` start **land cover 2019**
+- `2026-09-27 01:25:01 WAT` done **land cover 2019** in **0.6 min** (38 s) — lulc_2019.tif
+- `2026-09-27 01:25:01 WAT` start **land cover 2020**
+- `2026-09-27 01:25:37 WAT` done **land cover 2020** in **0.6 min** (36 s) — lulc_2020.tif
+- `2026-09-27 01:25:37 WAT` start **land cover 2021**
+- `2026-09-27 01:26:03 WAT` done **land cover 2021** in **0.4 min** (26 s) — lulc_2021.tif
+- `2026-09-27 01:26:03 WAT` start **land cover 2022**
+- `2026-09-27 01:27:07 WAT` done **land cover 2022** in **0.4 min** (24 s) — lulc_2022.tif
+- `2026-09-27 01:27:07 WAT` start **land cover 2023**
+- `2026-09-27 01:27:27 WAT` done **land cover 2023** in **0.3 min** (20 s) — lulc_2023.tif
+- `2026-09-27 01:27:27 WAT` start **land cover 2024**
+- `2026-09-27 01:27:48 WAT` start **land cover 2015**
+- `2026-09-27 01:27:48 WAT` done **land cover 2024** in **0.4 min** (21 s) — lulc_2024.tif
+- `2026-09-27 01:27:48 WAT` start **land cover 2025**
+- `2026-09-27 01:43:16 WAT` start **land cover 2015**
+- `2026-09-27 01:43:30 WAT` done **land cover 2015** in **0.8 min** (46 s) — lulc_2015.tif
+- `2026-09-27 01:43:30 WAT` start **land cover 2016**
+- `2026-09-27 01:43:34 WAT` done **land cover 2025** in **0.8 min** (49 s) — lulc_2025.tif
+- `2026-09-27 01:43:34 WAT` start **land cover 2026**
+- `2026-09-27 01:44:06 WAT` done **land cover 2015** in **0.8 min** (50 s) — lulc_2015.tif
+- `2026-09-27 01:44:06 WAT` start **land cover 2016**
+- `2026-09-27 01:44:21 WAT` done **land cover 2016** in **0.8 min** (51 s) — lulc_2016.tif
+- `2026-09-27 01:44:21 WAT` start **land cover 2017**
+- `2026-09-27 01:44:29 WAT` done **land cover 2026** in **0.9 min** (55 s) — lulc_2026.tif
+- `2026-09-27 01:44:43 WAT` start **land cover smoothing** — three-year mean of class probabilities
+- `2026-09-27 01:44:48 WAT` done **land cover 2016** in **0.7 min** (43 s) — lulc_2016.tif
+- `2026-09-27 01:44:48 WAT` start **land cover 2017**
+- `2026-09-27 01:44:58 WAT` done **land cover 2017** in **0.6 min** (37 s) — lulc_2017.tif
+- `2026-09-27 01:44:58 WAT` start **land cover 2018**
+- `2026-09-27 01:45:25 WAT` done **land cover smoothing** in **0.7 min** (43 s) — 12 years
+- `2026-09-27 01:45:26 WAT` done **land cover 2017** in **0.6 min** (38 s) — lulc_2017.tif
+- `2026-09-27 01:45:26 WAT` start **land cover 2018**
+- `2026-09-27 01:45:36 WAT` done **land cover 2018** in **0.6 min** (38 s) — lulc_2018.tif
+- `2026-09-27 01:45:36 WAT` start **land cover 2019**
+- `2026-09-27 01:46:02 WAT` done **land cover 2018** in **0.6 min** (36 s) — lulc_2018.tif
+- `2026-09-27 01:46:02 WAT` start **land cover 2019**
+- `2026-09-27 01:46:12 WAT` done **land cover 2019** in **0.6 min** (36 s) — lulc_2019.tif
+- `2026-09-27 01:46:12 WAT` start **land cover 2020**
+- `2026-09-27 01:46:36 WAT` done **land cover 2019** in **0.6 min** (34 s) — lulc_2019.tif
+- `2026-09-27 01:46:36 WAT` start **land cover 2020**
+- `2026-09-27 01:46:52 WAT` done **land cover 2020** in **0.7 min** (40 s) — lulc_2020.tif
+- `2026-09-27 01:46:52 WAT` start **land cover 2021**
+- `2026-09-27 01:47:15 WAT` done **land cover 2020** in **0.6 min** (38 s) — lulc_2020.tif
+- `2026-09-27 01:47:15 WAT` start **land cover 2021**
+- `2026-09-27 01:47:27 WAT` done **land cover 2021** in **0.6 min** (34 s) — lulc_2021.tif
+- `2026-09-27 01:47:27 WAT` start **land cover 2022**
+- `2026-09-27 01:47:49 WAT` done **land cover 2021** in **0.6 min** (34 s) — lulc_2021.tif
+- `2026-09-27 01:47:49 WAT` start **land cover 2022**
+- `2026-09-27 01:47:54 WAT` done **land cover 2022** in **0.4 min** (27 s) — lulc_2022.tif
+- `2026-09-27 01:47:54 WAT` start **land cover 2023**
+- `2026-09-27 01:48:17 WAT` done **land cover 2022** in **0.5 min** (28 s) — lulc_2022.tif
+- `2026-09-27 01:48:17 WAT` start **land cover 2023**
+- `2026-09-27 01:48:28 WAT` done **land cover 2023** in **0.6 min** (34 s) — lulc_2023.tif
+- `2026-09-27 01:48:28 WAT` start **land cover 2024**
+- `2026-09-27 01:48:51 WAT` done **land cover 2023** in **0.6 min** (33 s) — lulc_2023.tif
+- `2026-09-27 01:48:51 WAT` start **land cover 2024**
+- `2026-09-27 01:49:01 WAT` done **land cover 2024** in **0.6 min** (33 s) — lulc_2024.tif
+- `2026-09-27 01:49:01 WAT` start **land cover 2025**
+- `2026-09-27 01:49:25 WAT` done **land cover 2024** in **0.6 min** (34 s) — lulc_2024.tif
+- `2026-09-27 01:49:25 WAT` start **land cover 2025**
+- `2026-09-27 01:49:35 WAT` done **land cover 2025** in **0.6 min** (34 s) — lulc_2025.tif
+- `2026-09-27 01:49:35 WAT` start **land cover 2026**
+- `2026-09-27 01:49:58 WAT` done **land cover 2025** in **0.6 min** (34 s) — lulc_2025.tif
+- `2026-09-27 01:49:58 WAT` start **land cover 2026**
+- `2026-09-27 01:50:11 WAT` done **land cover 2026** in **0.6 min** (36 s) — lulc_2026.tif
+- `2026-09-27 01:50:22 WAT` start **land cover smoothing** — three-year mean of class probabilities
+- `2026-09-27 01:50:27 WAT` done **land cover 2026** in **0.5 min** (29 s) — lulc_2026.tif
+- `2026-09-27 01:50:34 WAT` start **land cover smoothing** — three-year mean of class probabilities
+- `2026-09-27 01:50:44 WAT` done **land cover smoothing** in **0.4 min** (23 s) — 12 years
+- `2026-09-27 01:50:57 WAT` done **land cover smoothing** in **0.4 min** (23 s) — 12 years

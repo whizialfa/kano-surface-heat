@@ -2,7 +2,7 @@
 
 Anchor: Ramachandra, T. V., Rana, R. S., Vinay, S. & Aithal, B. H. (2025). Urban heat island linkages with the landscape morphology. *Scientific Reports* 15, 24485. https://doi.org/10.1038/s41598-025-09141-5. Supplement (tables S1–S4) is in `references/ramachandra2025_supplement.docx`.
 
-**This is an adapted measurement, not a clone.** Bangalore is a humid upland city on one April 2022 scene. Kano is a semi-arid Sahelian city surrounded by bare dry-season farmland. The anchor's own limitations (single date, no in-situ validation, no people) are the parts we change on purpose.
+This is an adaptation. Bangalore is a humid upland city on one April 2022 scene. Kano is a semi-arid Sahelian city surrounded by bare dry-season farmland. The anchor's own limitations (single date, no in-situ validation, no people) are the parts we change on purpose.
 
 ## What the anchor reports, and how each number is made
 

@@ -3,7 +3,7 @@ name: kano-heat
 description: >-
   Adapts Ramachandra et al. 2025 (Sci Rep) surface heat and land-use composition
   analysis to metropolitan Kano with Landsat C2 L2 surface temperature, ESA
-  WorldCover and GRID3 age-sex population. Not a replication. Use when working on
+  WorldCover and GRID3 age-sex population, as an adaptation. Use when working on
   Kano LST, surface heat island or cool island, UTFVI, hot spots, C1–C12
   composition classes, heat exposure of under-5s and over-65s, or this repo's plates.
 ---
@@ -12,7 +12,7 @@ description: >-
 
 ## Default stance
 
-Adapted measurement of Ramachandra, Rana, Vinay & Aithal 2025, *Sci Rep* 15, 24485. Never call it a replication. The trace and every departure live in `notes/metric_trace.md`; update it when a method changes.
+Adaptation of Ramachandra, Rana, Vinay & Aithal 2025, *Sci Rep* 15, 24485. Call it an adaptation, plainly; do not stress "not a replication". The trace and every departure live in `notes/metric_trace.md`; update it when a method changes.
 
 - Study area is the Kano metro outline shared with `15-min-cities-nigeria` (eight LGAs, 573 km²). Copy it with `kanoheat.inputs`, do not redraw it.
 - Rural reference ring is 1–10 km outside the outline.

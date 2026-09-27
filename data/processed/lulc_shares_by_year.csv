@@ -1,0 +1,595 @@
+source,year,zone,class,share
+ours,2015,metro,Built-up,0.3841
+ours,2015,metro,Cropland,0.0556
+ours,2015,metro,Bare ground,0.1896
+ours,2015,metro,Grass and shrub,0.3374
+ours,2015,metro,Trees,0.0331
+ours,2015,metro,Water,0.0004
+ours,2015,old_city,Built-up,0.7336
+ours,2015,old_city,Cropland,0.0034
+ours,2015,old_city,Bare ground,0.141
+ours,2015,old_city,Grass and shrub,0.0666
+ours,2015,old_city,Trees,0.0546
+ours,2015,old_city,Water,0.0008
+ours,2015,fringe,Built-up,0.2349
+ours,2015,fringe,Cropland,0.0778
+ours,2015,fringe,Bare ground,0.2104
+ours,2015,fringe,Grass and shrub,0.453
+ours,2015,fringe,Trees,0.0239
+ours,2015,fringe,Water,0.0001
+ours_smoothed,2015,metro,Built-up,0.3803
+ours_smoothed,2015,metro,Cropland,0.0725
+ours_smoothed,2015,metro,Bare ground,0.1259
+ours_smoothed,2015,metro,Grass and shrub,0.3865
+ours_smoothed,2015,metro,Trees,0.0344
+ours_smoothed,2015,metro,Water,0.0003
+ours_smoothed,2015,old_city,Built-up,0.7467
+ours_smoothed,2015,old_city,Cropland,0.0021
+ours_smoothed,2015,old_city,Bare ground,0.1014
+ours_smoothed,2015,old_city,Grass and shrub,0.0873
+ours_smoothed,2015,old_city,Trees,0.0619
+ours_smoothed,2015,old_city,Water,0.0007
+ours_smoothed,2015,fringe,Built-up,0.2233
+ours_smoothed,2015,fringe,Cropland,0.1028
+ours_smoothed,2015,fringe,Bare ground,0.1363
+ours_smoothed,2015,fringe,Grass and shrub,0.5149
+ours_smoothed,2015,fringe,Trees,0.0227
+ours_smoothed,2015,fringe,Water,0.0001
+ours,2016,metro,Built-up,0.378
+ours,2016,metro,Cropland,0.0991
+ours,2016,metro,Bare ground,0.0943
+ours,2016,metro,Grass and shrub,0.3923
+ours,2016,metro,Trees,0.036
+ours,2016,metro,Water,0.0003
+ours,2016,old_city,Built-up,0.743
+ours,2016,old_city,Cropland,0.0036
+ours,2016,old_city,Bare ground,0.0759
+ours,2016,old_city,Grass and shrub,0.1048
+ours,2016,old_city,Trees,0.072
+ours,2016,old_city,Water,0.0006
+ours,2016,fringe,Built-up,0.2215
+ours,2016,fringe,Cropland,0.1401
+ours,2016,fringe,Bare ground,0.1022
+ours,2016,fringe,Grass and shrub,0.5155
+ours,2016,fringe,Trees,0.0206
+ours,2016,fringe,Water,0.0002
+ours_smoothed,2016,metro,Built-up,0.4024
+ours_smoothed,2016,metro,Cropland,0.0583
+ours_smoothed,2016,metro,Bare ground,0.11
+ours_smoothed,2016,metro,Grass and shrub,0.3975
+ours_smoothed,2016,metro,Trees,0.0315
+ours_smoothed,2016,metro,Water,0.0003
+ours_smoothed,2016,old_city,Built-up,0.7753
+ours_smoothed,2016,old_city,Cropland,0.0008
+ours_smoothed,2016,old_city,Bare ground,0.0876
+ours_smoothed,2016,old_city,Grass and shrub,0.0795
+ours_smoothed,2016,old_city,Trees,0.0562
+ours_smoothed,2016,old_city,Water,0.0007
+ours_smoothed,2016,fringe,Built-up,0.2425
+ours_smoothed,2016,fringe,Cropland,0.0829
+ours_smoothed,2016,fringe,Bare ground,0.1196
+ours_smoothed,2016,fringe,Grass and shrub,0.5338
+ours_smoothed,2016,fringe,Trees,0.021
+ours_smoothed,2016,fringe,Water,0.0002
+ours,2017,metro,Built-up,0.4384
+ours,2017,metro,Cropland,0.0514
+ours,2017,metro,Bare ground,0.0983
+ours,2017,metro,Grass and shrub,0.3836
+ours,2017,metro,Trees,0.0279
+ours,2017,metro,Water,0.0004
+ours,2017,old_city,Built-up,0.807
+ours,2017,old_city,Cropland,0.0007
+ours,2017,old_city,Bare ground,0.0775
+ours,2017,old_city,Grass and shrub,0.0659
+ours,2017,old_city,Trees,0.0481
+ours,2017,old_city,Water,0.0007
+ours,2017,fringe,Built-up,0.2807
+ours,2017,fringe,Cropland,0.073
+ours,2017,fringe,Bare ground,0.1072
+ours,2017,fringe,Grass and shrub,0.5195
+ours,2017,fringe,Trees,0.0192
+ours,2017,fringe,Water,0.0003
+ours_smoothed,2017,metro,Built-up,0.4229
+ours_smoothed,2017,metro,Cropland,0.0439
+ours_smoothed,2017,metro,Bare ground,0.0921
+ours_smoothed,2017,metro,Grass and shrub,0.4077
+ours_smoothed,2017,metro,Trees,0.033
+ours_smoothed,2017,metro,Water,0.0003
+ours_smoothed,2017,old_city,Built-up,0.7924
+ours_smoothed,2017,old_city,Cropland,0.0003
+ours_smoothed,2017,old_city,Bare ground,0.072
+ours_smoothed,2017,old_city,Grass and shrub,0.0773
+ours_smoothed,2017,old_city,Trees,0.0573
+ours_smoothed,2017,old_city,Water,0.0006
+ours_smoothed,2017,fringe,Built-up,0.2645
+ours_smoothed,2017,fringe,Cropland,0.0627
+ours_smoothed,2017,fringe,Bare ground,0.1008
+ours_smoothed,2017,fringe,Grass and shrub,0.5493
+ours_smoothed,2017,fringe,Trees,0.0225
+ours_smoothed,2017,fringe,Water,0.0002
+ours,2018,metro,Built-up,0.4452
+ours,2018,metro,Cropland,0.0153
+ours,2018,metro,Bare ground,0.1094
+ours,2018,metro,Grass and shrub,0.3929
+ours,2018,metro,Trees,0.0367
+ours,2018,metro,Water,0.0005
+ours,2018,old_city,Built-up,0.7927
+ours,2018,old_city,Cropland,0.0003
+ours,2018,old_city,Bare ground,0.0853
+ours,2018,old_city,Grass and shrub,0.0632
+ours,2018,old_city,Trees,0.0577
+ours,2018,old_city,Water,0.0007
+ours,2018,fringe,Built-up,0.2964
+ours,2018,fringe,Cropland,0.0218
+ours,2018,fringe,Bare ground,0.1197
+ours,2018,fringe,Grass and shrub,0.5341
+ours,2018,fringe,Trees,0.0278
+ours,2018,fringe,Water,0.0003
+ours_smoothed,2018,metro,Built-up,0.434
+ours_smoothed,2018,metro,Cropland,0.0867
+ours_smoothed,2018,metro,Bare ground,0.0865
+ours_smoothed,2018,metro,Grass and shrub,0.3583
+ours_smoothed,2018,metro,Trees,0.0342
+ours_smoothed,2018,metro,Water,0.0004
+ours_smoothed,2018,old_city,Built-up,0.7981
+ours_smoothed,2018,old_city,Cropland,0.001
+ours_smoothed,2018,old_city,Bare ground,0.0723
+ours_smoothed,2018,old_city,Grass and shrub,0.0713
+ours_smoothed,2018,old_city,Trees,0.0567
+ours_smoothed,2018,old_city,Water,0.0006
+ours_smoothed,2018,fringe,Built-up,0.278
+ours_smoothed,2018,fringe,Cropland,0.1233
+ours_smoothed,2018,fringe,Bare ground,0.0926
+ours_smoothed,2018,fringe,Grass and shrub,0.4813
+ours_smoothed,2018,fringe,Trees,0.0245
+ours_smoothed,2018,fringe,Water,0.0003
+ours,2019,metro,Built-up,0.4116
+ours,2019,metro,Cropland,0.2713
+ours,2019,metro,Bare ground,0.0772
+ours,2019,metro,Grass and shrub,0.2013
+ours,2019,metro,Trees,0.038
+ours,2019,metro,Water,0.0005
+ours,2019,old_city,Built-up,0.7586
+ours,2019,old_city,Cropland,0.0154
+ours,2019,old_city,Bare ground,0.0807
+ours,2019,old_city,Grass and shrub,0.0753
+ours,2019,old_city,Trees,0.0692
+ours,2019,old_city,Water,0.0007
+ours,2019,fringe,Built-up,0.263
+ours,2019,fringe,Cropland,0.3809
+ours,2019,fringe,Bare ground,0.0757
+ours,2019,fringe,Grass and shrub,0.2553
+ours,2019,fringe,Trees,0.0247
+ours,2019,fringe,Water,0.0004
+ours_smoothed,2019,metro,Built-up,0.4254
+ours_smoothed,2019,metro,Cropland,0.228
+ours_smoothed,2019,metro,Bare ground,0.0822
+ours_smoothed,2019,metro,Grass and shrub,0.2256
+ours_smoothed,2019,metro,Trees,0.0383
+ours_smoothed,2019,metro,Water,0.0005
+ours_smoothed,2019,old_city,Built-up,0.7803
+ours_smoothed,2019,old_city,Cropland,0.0145
+ours_smoothed,2019,old_city,Bare ground,0.069
+ours_smoothed,2019,old_city,Grass and shrub,0.0695
+ours_smoothed,2019,old_city,Trees,0.066
+ours_smoothed,2019,old_city,Water,0.0007
+ours_smoothed,2019,fringe,Built-up,0.2732
+ours_smoothed,2019,fringe,Cropland,0.3196
+ours_smoothed,2019,fringe,Bare ground,0.0879
+ours_smoothed,2019,fringe,Grass and shrub,0.2925
+ours_smoothed,2019,fringe,Trees,0.0264
+ours_smoothed,2019,fringe,Water,0.0004
+ours,2020,metro,Built-up,0.4076
+ours,2020,metro,Cropland,0.321
+ours,2020,metro,Bare ground,0.0919
+ours,2020,metro,Grass and shrub,0.1381
+ours,2020,metro,Trees,0.0407
+ours,2020,metro,Water,0.0007
+ours,2020,old_city,Built-up,0.7512
+ours,2020,old_city,Cropland,0.0339
+ours,2020,old_city,Bare ground,0.0726
+ours,2020,old_city,Grass and shrub,0.0674
+ours,2020,old_city,Trees,0.0741
+ours,2020,old_city,Water,0.0008
+ours,2020,fringe,Built-up,0.2603
+ours,2020,fringe,Cropland,0.4441
+ours,2020,fringe,Bare ground,0.1002
+ours,2020,fringe,Grass and shrub,0.1683
+ours,2020,fringe,Trees,0.0264
+ours,2020,fringe,Water,0.0007
+ours_smoothed,2020,metro,Built-up,0.4188
+ours_smoothed,2020,metro,Cropland,0.3164
+ours_smoothed,2020,metro,Bare ground,0.063
+ours_smoothed,2020,metro,Grass and shrub,0.1575
+ours_smoothed,2020,metro,Trees,0.0436
+ours_smoothed,2020,metro,Water,0.0007
+ours_smoothed,2020,old_city,Built-up,0.762
+ours_smoothed,2020,old_city,Cropland,0.0268
+ours_smoothed,2020,old_city,Bare ground,0.0577
+ours_smoothed,2020,old_city,Grass and shrub,0.0784
+ours_smoothed,2020,old_city,Trees,0.0743
+ours_smoothed,2020,old_city,Water,0.0008
+ours_smoothed,2020,fringe,Built-up,0.2717
+ours_smoothed,2020,fringe,Cropland,0.4406
+ours_smoothed,2020,fringe,Bare ground,0.0653
+ours_smoothed,2020,fringe,Grass and shrub,0.1914
+ours_smoothed,2020,fringe,Trees,0.0304
+ours_smoothed,2020,fringe,Water,0.0007
+ours,2021,metro,Built-up,0.4137
+ours,2021,metro,Cropland,0.3134
+ours,2021,metro,Bare ground,0.0517
+ours,2021,metro,Grass and shrub,0.1676
+ours,2021,metro,Trees,0.0523
+ours,2021,metro,Water,0.0013
+ours,2021,old_city,Built-up,0.7375
+ours,2021,old_city,Cropland,0.0289
+ours,2021,old_city,Bare ground,0.0514
+ours,2021,old_city,Grass and shrub,0.0971
+ours,2021,old_city,Trees,0.0841
+ours,2021,old_city,Water,0.001
+ours,2021,fringe,Built-up,0.2761
+ours,2021,fringe,Cropland,0.4344
+ours,2021,fringe,Bare ground,0.0519
+ours,2021,fringe,Grass and shrub,0.1975
+ours,2021,fringe,Trees,0.0387
+ours,2021,fringe,Water,0.0014
+ours_smoothed,2021,metro,Built-up,0.4276
+ours_smoothed,2021,metro,Cropland,0.3113
+ours_smoothed,2021,metro,Bare ground,0.0707
+ours_smoothed,2021,metro,Grass and shrub,0.1447
+ours_smoothed,2021,metro,Trees,0.0448
+ours_smoothed,2021,metro,Water,0.0009
+ours_smoothed,2021,old_city,Built-up,0.7679
+ours_smoothed,2021,old_city,Cropland,0.0273
+ours_smoothed,2021,old_city,Bare ground,0.0563
+ours_smoothed,2021,old_city,Grass and shrub,0.0791
+ours_smoothed,2021,old_city,Trees,0.0685
+ours_smoothed,2021,old_city,Water,0.0008
+ours_smoothed,2021,fringe,Built-up,0.2817
+ours_smoothed,2021,fringe,Cropland,0.4331
+ours_smoothed,2021,fringe,Bare ground,0.0769
+ours_smoothed,2021,fringe,Grass and shrub,0.1728
+ours_smoothed,2021,fringe,Trees,0.0346
+ours_smoothed,2021,fringe,Water,0.0009
+ours,2022,metro,Built-up,0.4319
+ours,2022,metro,Cropland,0.23
+ours,2022,metro,Bare ground,0.1294
+ours,2022,metro,Grass and shrub,0.1716
+ours,2022,metro,Trees,0.0362
+ours,2022,metro,Water,0.001
+ours,2022,old_city,Built-up,0.7549
+ours,2022,old_city,Cropland,0.0123
+ours,2022,old_city,Bare ground,0.1055
+ours,2022,old_city,Grass and shrub,0.0798
+ours,2022,old_city,Trees,0.0468
+ours,2022,old_city,Water,0.0008
+ours,2022,fringe,Built-up,0.2939
+ours,2022,fringe,Cropland,0.323
+ours,2022,fringe,Bare ground,0.1396
+ours,2022,fringe,Grass and shrub,0.2108
+ours,2022,fringe,Trees,0.0317
+ours,2022,fringe,Water,0.001
+ours_smoothed,2022,metro,Built-up,0.4472
+ours_smoothed,2022,metro,Cropland,0.2521
+ours_smoothed,2022,metro,Bare ground,0.0678
+ours_smoothed,2022,metro,Grass and shrub,0.185
+ours_smoothed,2022,metro,Trees,0.0468
+ours_smoothed,2022,metro,Water,0.001
+ours_smoothed,2022,old_city,Built-up,0.7828
+ours_smoothed,2022,old_city,Cropland,0.0183
+ours_smoothed,2022,old_city,Bare ground,0.05
+ours_smoothed,2022,old_city,Grass and shrub,0.0805
+ours_smoothed,2022,old_city,Trees,0.0676
+ours_smoothed,2022,old_city,Water,0.0008
+ours_smoothed,2022,fringe,Built-up,0.3035
+ours_smoothed,2022,fringe,Cropland,0.3522
+ours_smoothed,2022,fringe,Bare ground,0.0755
+ours_smoothed,2022,fringe,Grass and shrub,0.2298
+ours_smoothed,2022,fringe,Trees,0.038
+ours_smoothed,2022,fringe,Water,0.0011
+ours,2023,metro,Built-up,0.4567
+ours,2023,metro,Cropland,0.1293
+ours,2023,metro,Bare ground,0.0795
+ours,2023,metro,Grass and shrub,0.2859
+ours,2023,metro,Trees,0.0474
+ours,2023,metro,Water,0.0012
+ours,2023,old_city,Built-up,0.7891
+ours,2023,old_city,Cropland,0.0085
+ours,2023,old_city,Bare ground,0.0536
+ours,2023,old_city,Grass and shrub,0.0766
+ours,2023,old_city,Trees,0.0713
+ours,2023,old_city,Water,0.0009
+ours,2023,fringe,Built-up,0.3144
+ours,2023,fringe,Cropland,0.1811
+ours,2023,fringe,Bare ground,0.0905
+ours,2023,fringe,Grass and shrub,0.3755
+ours,2023,fringe,Trees,0.0371
+ours,2023,fringe,Water,0.0013
+ours_smoothed,2023,metro,Built-up,0.4966
+ours_smoothed,2023,metro,Cropland,0.1453
+ours_smoothed,2023,metro,Bare ground,0.0887
+ours_smoothed,2023,metro,Grass and shrub,0.2274
+ours_smoothed,2023,metro,Trees,0.0409
+ours_smoothed,2023,metro,Water,0.0009
+ours_smoothed,2023,old_city,Built-up,0.8334
+ours_smoothed,2023,old_city,Cropland,0.0064
+ours_smoothed,2023,old_city,Bare ground,0.0465
+ours_smoothed,2023,old_city,Grass and shrub,0.0577
+ours_smoothed,2023,old_city,Trees,0.0552
+ours_smoothed,2023,old_city,Water,0.0008
+ours_smoothed,2023,fringe,Built-up,0.3523
+ours_smoothed,2023,fringe,Cropland,0.2049
+ours_smoothed,2023,fringe,Bare ground,0.1068
+ours_smoothed,2023,fringe,Grass and shrub,0.3002
+ours_smoothed,2023,fringe,Trees,0.0348
+ours_smoothed,2023,fringe,Water,0.001
+ours,2024,metro,Built-up,0.558
+ours,2024,metro,Cropland,0.0602
+ours,2024,metro,Bare ground,0.1548
+ours,2024,metro,Grass and shrub,0.1896
+ours,2024,metro,Trees,0.0365
+ours,2024,metro,Water,0.0008
+ours,2024,old_city,Built-up,0.8678
+ours,2024,old_city,Cropland,0.0008
+ours,2024,old_city,Bare ground,0.0547
+ours,2024,old_city,Grass and shrub,0.0269
+ours,2024,old_city,Trees,0.0489
+ours,2024,old_city,Water,0.0009
+ours,2024,fringe,Built-up,0.4252
+ours,2024,fringe,Cropland,0.0856
+ours,2024,fringe,Bare ground,0.1977
+ours,2024,fringe,Grass and shrub,0.2594
+ours,2024,fringe,Trees,0.0312
+ours,2024,fringe,Water,0.0008
+ours_smoothed,2024,metro,Built-up,0.5032
+ours_smoothed,2024,metro,Cropland,0.0871
+ours_smoothed,2024,metro,Bare ground,0.0817
+ours_smoothed,2024,metro,Grass and shrub,0.2826
+ours_smoothed,2024,metro,Trees,0.0442
+ours_smoothed,2024,metro,Water,0.0012
+ours_smoothed,2024,old_city,Built-up,0.8282
+ours_smoothed,2024,old_city,Cropland,0.0033
+ours_smoothed,2024,old_city,Bare ground,0.0429
+ours_smoothed,2024,old_city,Grass and shrub,0.0624
+ours_smoothed,2024,old_city,Trees,0.0623
+ours_smoothed,2024,old_city,Water,0.0009
+ours_smoothed,2024,fringe,Built-up,0.3639
+ours_smoothed,2024,fringe,Cropland,0.123
+ours_smoothed,2024,fringe,Bare ground,0.0983
+ours_smoothed,2024,fringe,Grass and shrub,0.377
+ours_smoothed,2024,fringe,Trees,0.0365
+ours_smoothed,2024,fringe,Water,0.0013
+ours,2025,metro,Built-up,0.4907
+ours,2025,metro,Cropland,0.0798
+ours,2025,metro,Bare ground,0.0804
+ours,2025,metro,Grass and shrub,0.2975
+ours,2025,metro,Trees,0.0499
+ours,2025,metro,Water,0.0016
+ours,2025,old_city,Built-up,0.7971
+ours,2025,old_city,Cropland,0.0036
+ours,2025,old_city,Bare ground,0.0512
+ours,2025,old_city,Grass and shrub,0.0748
+ours,2025,old_city,Trees,0.0723
+ours,2025,old_city,Water,0.001
+ours,2025,fringe,Built-up,0.3594
+ours,2025,fringe,Cropland,0.1125
+ours,2025,fringe,Bare ground,0.093
+ours,2025,fringe,Grass and shrub,0.393
+ours,2025,fringe,Trees,0.0403
+ours,2025,fringe,Water,0.0019
+ours_smoothed,2025,metro,Built-up,0.534
+ours_smoothed,2025,metro,Cropland,0.0806
+ours_smoothed,2025,metro,Bare ground,0.0894
+ours_smoothed,2025,metro,Grass and shrub,0.2524
+ours_smoothed,2025,metro,Trees,0.0425
+ours_smoothed,2025,metro,Water,0.0011
+ours_smoothed,2025,old_city,Built-up,0.8477
+ours_smoothed,2025,old_city,Cropland,0.0026
+ours_smoothed,2025,old_city,Bare ground,0.0384
+ours_smoothed,2025,old_city,Grass and shrub,0.0544
+ours_smoothed,2025,old_city,Trees,0.056
+ours_smoothed,2025,old_city,Water,0.0009
+ours_smoothed,2025,fringe,Built-up,0.3994
+ours_smoothed,2025,fringe,Cropland,0.114
+ours_smoothed,2025,fringe,Bare ground,0.1113
+ours_smoothed,2025,fringe,Grass and shrub,0.3372
+ours_smoothed,2025,fringe,Trees,0.0368
+ours_smoothed,2025,fringe,Water,0.0012
+ours,2026,metro,Built-up,0.549
+ours,2026,metro,Cropland,0.1097
+ours,2026,metro,Bare ground,0.0962
+ours,2026,metro,Grass and shrub,0.202
+ours,2026,metro,Trees,0.0421
+ours,2026,metro,Water,0.001
+ours,2026,old_city,Built-up,0.8491
+ours,2026,old_city,Cropland,0.0055
+ours,2026,old_city,Bare ground,0.0412
+ours,2026,old_city,Grass and shrub,0.0495
+ours,2026,old_city,Trees,0.0539
+ours,2026,old_city,Water,0.0008
+ours,2026,fringe,Built-up,0.4203
+ours,2026,fringe,Cropland,0.1544
+ours,2026,fringe,Bare ground,0.1197
+ours,2026,fringe,Grass and shrub,0.2674
+ours,2026,fringe,Trees,0.0371
+ours,2026,fringe,Water,0.0011
+ours_smoothed,2026,metro,Built-up,0.5228
+ours_smoothed,2026,metro,Cropland,0.0889
+ours_smoothed,2026,metro,Bare ground,0.0807
+ours_smoothed,2026,metro,Grass and shrub,0.2609
+ours_smoothed,2026,metro,Trees,0.0454
+ours_smoothed,2026,metro,Water,0.0013
+ours_smoothed,2026,old_city,Built-up,0.8305
+ours_smoothed,2026,old_city,Cropland,0.0034
+ours_smoothed,2026,old_city,Bare ground,0.0402
+ours_smoothed,2026,old_city,Grass and shrub,0.0641
+ours_smoothed,2026,old_city,Trees,0.0609
+ours_smoothed,2026,old_city,Water,0.0009
+ours_smoothed,2026,fringe,Built-up,0.3909
+ours_smoothed,2026,fringe,Cropland,0.1255
+ours_smoothed,2026,fringe,Bare ground,0.0981
+ours_smoothed,2026,fringe,Grass and shrub,0.3452
+ours_smoothed,2026,fringe,Trees,0.0388
+ours_smoothed,2026,fringe,Water,0.0015
+worldcover,2020,metro,Built-up,0.3908
+worldcover,2020,metro,Cropland,0.424
+worldcover,2020,metro,Bare ground,0.0746
+worldcover,2020,metro,Grass and shrub,0.0992
+worldcover,2020,metro,Trees,0.0095
+worldcover,2020,metro,Water,0.0018
+worldcover,2020,old_city,Built-up,0.7345
+worldcover,2020,old_city,Cropland,0.0796
+worldcover,2020,old_city,Bare ground,0.0708
+worldcover,2020,old_city,Grass and shrub,0.0926
+worldcover,2020,old_city,Trees,0.0207
+worldcover,2020,old_city,Water,0.0018
+worldcover,2020,fringe,Built-up,0.2435
+worldcover,2020,fringe,Cropland,0.5716
+worldcover,2020,fringe,Bare ground,0.0763
+worldcover,2020,fringe,Grass and shrub,0.1021
+worldcover,2020,fringe,Trees,0.0047
+worldcover,2020,fringe,Water,0.0018
+worldcover,2021,metro,Built-up,0.4507
+worldcover,2021,metro,Cropland,0.4017
+worldcover,2021,metro,Bare ground,0.0181
+worldcover,2021,metro,Grass and shrub,0.1081
+worldcover,2021,metro,Trees,0.0205
+worldcover,2021,metro,Water,0.0009
+worldcover,2021,old_city,Built-up,0.7957
+worldcover,2021,old_city,Cropland,0.0653
+worldcover,2021,old_city,Bare ground,0.0132
+worldcover,2021,old_city,Grass and shrub,0.0831
+worldcover,2021,old_city,Trees,0.0425
+worldcover,2021,old_city,Water,0.0002
+worldcover,2021,fringe,Built-up,0.3028
+worldcover,2021,fringe,Cropland,0.546
+worldcover,2021,fringe,Bare ground,0.0202
+worldcover,2021,fringe,Grass and shrub,0.1188
+worldcover,2021,fringe,Trees,0.011
+worldcover,2021,fringe,Water,0.0012
+io,2017,metro,Built-up,0.4702
+io,2017,metro,Cropland,0.0224
+io,2017,metro,Bare ground,0.0031
+io,2017,metro,Grass and shrub,0.5014
+io,2017,metro,Trees,0.0012
+io,2017,metro,Water,0.0017
+io,2017,old_city,Built-up,0.8728
+io,2017,old_city,Cropland,0.0239
+io,2017,old_city,Bare ground,0.0041
+io,2017,old_city,Grass and shrub,0.0969
+io,2017,old_city,Trees,0.0019
+io,2017,old_city,Water,0.0004
+io,2017,fringe,Built-up,0.2975
+io,2017,fringe,Cropland,0.0218
+io,2017,fringe,Bare ground,0.0027
+io,2017,fringe,Grass and shrub,0.6749
+io,2017,fringe,Trees,0.001
+io,2017,fringe,Water,0.0022
+io,2018,metro,Built-up,0.4876
+io,2018,metro,Cropland,0.0227
+io,2018,metro,Bare ground,0.0022
+io,2018,metro,Grass and shrub,0.4851
+io,2018,metro,Trees,0.0006
+io,2018,metro,Water,0.0019
+io,2018,old_city,Built-up,0.8821
+io,2018,old_city,Cropland,0.0154
+io,2018,old_city,Bare ground,0.0022
+io,2018,old_city,Grass and shrub,0.0984
+io,2018,old_city,Trees,0.0016
+io,2018,old_city,Water,0.0003
+io,2018,fringe,Built-up,0.3185
+io,2018,fringe,Cropland,0.0259
+io,2018,fringe,Bare ground,0.0021
+io,2018,fringe,Grass and shrub,0.6508
+io,2018,fringe,Trees,0.0002
+io,2018,fringe,Water,0.0025
+io,2019,metro,Built-up,0.5253
+io,2019,metro,Cropland,0.0459
+io,2019,metro,Bare ground,0.0016
+io,2019,metro,Grass and shrub,0.4247
+io,2019,metro,Trees,0.0005
+io,2019,metro,Water,0.002
+io,2019,old_city,Built-up,0.8949
+io,2019,old_city,Cropland,0.0134
+io,2019,old_city,Bare ground,0.0016
+io,2019,old_city,Grass and shrub,0.0886
+io,2019,old_city,Trees,0.0013
+io,2019,old_city,Water,0.0003
+io,2019,fringe,Built-up,0.3668
+io,2019,fringe,Cropland,0.0599
+io,2019,fringe,Bare ground,0.0015
+io,2019,fringe,Grass and shrub,0.5688
+io,2019,fringe,Trees,0.0002
+io,2019,fringe,Water,0.0027
+io,2020,metro,Built-up,0.5389
+io,2020,metro,Cropland,0.061
+io,2020,metro,Bare ground,0.0014
+io,2020,metro,Grass and shrub,0.3958
+io,2020,metro,Trees,0.0006
+io,2020,metro,Water,0.0023
+io,2020,old_city,Built-up,0.8989
+io,2020,old_city,Cropland,0.0131
+io,2020,old_city,Bare ground,0.0015
+io,2020,old_city,Grass and shrub,0.0846
+io,2020,old_city,Trees,0.0016
+io,2020,old_city,Water,0.0004
+io,2020,fringe,Built-up,0.3846
+io,2020,fringe,Cropland,0.0816
+io,2020,fringe,Bare ground,0.0013
+io,2020,fringe,Grass and shrub,0.5292
+io,2020,fringe,Trees,0.0002
+io,2020,fringe,Water,0.0032
+io,2021,metro,Built-up,0.5494
+io,2021,metro,Cropland,0.0209
+io,2021,metro,Bare ground,0.0016
+io,2021,metro,Grass and shrub,0.4256
+io,2021,metro,Trees,0.0004
+io,2021,metro,Water,0.0021
+io,2021,old_city,Built-up,0.9036
+io,2021,old_city,Cropland,0.0103
+io,2021,old_city,Bare ground,0.0018
+io,2021,old_city,Grass and shrub,0.083
+io,2021,old_city,Trees,0.0009
+io,2021,old_city,Water,0.0004
+io,2021,fringe,Built-up,0.3975
+io,2021,fringe,Cropland,0.0254
+io,2021,fringe,Bare ground,0.0015
+io,2021,fringe,Grass and shrub,0.5725
+io,2021,fringe,Trees,0.0002
+io,2021,fringe,Water,0.0028
+io,2022,metro,Built-up,0.5714
+io,2022,metro,Cropland,0.0195
+io,2022,metro,Bare ground,0.0028
+io,2022,metro,Grass and shrub,0.404
+io,2022,metro,Trees,0.0004
+io,2022,metro,Water,0.0019
+io,2022,old_city,Built-up,0.9041
+io,2022,old_city,Cropland,0.0134
+io,2022,old_city,Bare ground,0.0039
+io,2022,old_city,Grass and shrub,0.0773
+io,2022,old_city,Trees,0.001
+io,2022,old_city,Water,0.0004
+io,2022,fringe,Built-up,0.4288
+io,2022,fringe,Cropland,0.0222
+io,2022,fringe,Bare ground,0.0024
+io,2022,fringe,Grass and shrub,0.5441
+io,2022,fringe,Trees,0.0001
+io,2022,fringe,Water,0.0025
+io,2023,metro,Built-up,0.5911
+io,2023,metro,Cropland,0.0184
+io,2023,metro,Bare ground,0.0018
+io,2023,metro,Grass and shrub,0.3863
+io,2023,metro,Trees,0.0003
+io,2023,metro,Water,0.0021
+io,2023,old_city,Built-up,0.9091
+io,2023,old_city,Cropland,0.014
+io,2023,old_city,Bare ground,0.0024
+io,2023,old_city,Grass and shrub,0.0735
+io,2023,old_city,Trees,0.0005
+io,2023,old_city,Water,0.0005
+io,2023,fringe,Built-up,0.4548
+io,2023,fringe,Cropland,0.0203
+io,2023,fringe,Bare ground,0.0016
+io,2023,fringe,Grass and shrub,0.5204
+io,2023,fringe,Trees,0.0002
+io,2023,fringe,Water,0.0028
