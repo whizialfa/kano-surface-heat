@@ -7,6 +7,7 @@ plus a rural ring, so medians are taken pixel by pixel on the same cells.
 from __future__ import annotations
 
 import argparse
+import time
 from concurrent.futures import ThreadPoolExecutor
 
 import geopandas as gpd
@@ -14,6 +15,7 @@ import numpy as np
 import pandas as pd
 import planetary_computer as pc
 import rasterio
+import rasterio.errors
 from pystac_client import Client
 from rasterio.enums import Resampling
 from rasterio.transform import from_origin
@@ -42,12 +44,18 @@ def grid(ring_m: float = RING_M):
     return from_origin(xmin, ymax, PIXEL, PIXEL), width, height
 
 
-def _read(href: str, transform, width: int, height: int, dtype, nodata) -> np.ndarray:
-    with rasterio.Env(**GDAL_ENV):
-        with rasterio.open(pc.sign(href)) as src:
-            with WarpedVRT(src, crs=f"EPSG:{UTM}", transform=transform, width=width, height=height,
-                           resampling=Resampling.nearest, src_nodata=nodata, nodata=nodata) as vrt:
-                return vrt.read(1, out_dtype=dtype)
+def _read(href: str, transform, width: int, height: int, dtype, nodata, *, tries: int = 4) -> np.ndarray:
+    for attempt in range(1, tries + 1):
+        try:
+            with rasterio.Env(**GDAL_ENV):
+                with rasterio.open(pc.sign(href)) as src:
+                    with WarpedVRT(src, crs=f"EPSG:{UTM}", transform=transform, width=width, height=height,
+                                   resampling=Resampling.nearest, src_nodata=nodata, nodata=nodata) as vrt:
+                        return vrt.read(1, out_dtype=dtype)
+        except rasterio.errors.RasterioIOError:
+            if attempt == tries:
+                raise
+            time.sleep(5 * attempt)
 
 
 def scene_lst(item, transform, width, height) -> np.ndarray:

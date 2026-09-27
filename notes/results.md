@@ -21,7 +21,7 @@ This is surface temperature, not air temperature. The claim is about where the g
 
 Ramachandra, Rana, Vinay and Aithal (2025) link land surface temperature (LST) to the land-use mix inside each 30 m Landsat pixel in Bangalore, using one April 2022 scene, a 10 m Sentinel-2 land-use map and four spectral indices. They find bare soil and urban pixels hottest (39.9 and 39.7 °C), vegetation and water coolest, and recommend at least 30% vegetation per plot.
 
-This paper asks the same question of Kano, a semi-arid Sahelian city ringed by dry-season farmland, and adds what the anchor lacks: many dates, people, wards and walking time. **It is an adapted measurement, not a replication.** Every departure is listed in `notes/metric_trace.md`.
+This paper asks the same question of Kano, a semi-arid Sahelian city ringed by dry-season farmland, and adds what the anchor lacks: many dates, people, wards and walking time. It is an adaptation; every departure is listed in `notes/metric_trace.md`.
 
 # 2. Data and method
 

@@ -2,7 +2,7 @@
 
 **Surface heat, land cover and people in metropolitan Kano**
 
-Adaptation of Ramachandra, Rana, Vinay & Aithal (2025), [Urban heat island linkages with the landscape morphology](https://doi.org/10.1038/s41598-025-09141-5), *Scientific Reports* 15, 24485. **This is not a replication.** The anchor uses one April 2022 scene over humid Bangalore, uncorrected Landsat thermal, a field-trained land-use map and no population. Here: every clear Landsat 8/9 hot-season scene over semi-arid Kano from 2015 to 2026, USGS Level-2 surface temperature, ESA WorldCover, and GRID3 population on the same hexes as [*Fifteen minutes on foot*](https://github.com/whizialfa/15-min-cities-nigeria).
+Adaptation of Ramachandra, Rana, Vinay & Aithal (2025), [Urban heat island linkages with the landscape morphology](https://doi.org/10.1038/s41598-025-09141-5), *Scientific Reports* 15, 24485. The anchor uses one April 2022 scene over humid Bangalore, uncorrected Landsat thermal, a field-trained land-use map and no population. Here: every clear Landsat 8/9 hot-season scene over semi-arid Kano from 2015 to 2026, USGS Level-2 surface temperature, ESA WorldCover, and GRID3 population on the same hexes as [*Fifteen minutes on foot*](https://github.com/whizialfa/15-min-cities-nigeria).
 
 Write-up: [`notes/results.md`](notes/results.md). Trace from raw input to every quoted number, and every departure from the anchor: [`notes/metric_trace.md`](notes/metric_trace.md).
 
