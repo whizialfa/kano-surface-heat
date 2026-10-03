@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$title$</title>
+  <link rel="stylesheet" href="print.css" />
+</head>
+<body>
+  <header class="mast">
+    <p class="kicker">Kano · Surface heat · 2015 to 2026</p>
+    <h1 class="doc-title">$title$</h1>
+$if(subtitle)$
+    <p class="doc-sub">$subtitle$</p>
+$endif$
+    <div class="byline">
+      <span class="author">$for(author)$$author$$sep$, $endfor$</span>
+      <span class="dot">·</span>
+      <span class="when">$date$</span>
+    </div>
+    <p class="adapt">Surface temperature and land cover, adapted from <a href="https://doi.org/10.1038/s41598-025-09141-5">Ramachandra, Rana, Vinay and Aithal, <em>Scientific Reports</em> (2025)</a>.</p>
+$if(links)$
+    <p class="map-link">$links$</p>
+$endif$
+  </header>
+
+  <main>
+$body$
+  </main>
+</body>
+</html>

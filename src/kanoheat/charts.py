@@ -26,18 +26,23 @@ plt.rcParams["ps.fonttype"] = 42
 plt.rcParams["axes.unicode_minus"] = False
 
 PAGE = "#ffffff"
-LAND = "#f3efe6"
+LAND = "#f8f1e7"
 INK = "#000000"
-GRID = "#d4cdc2"
+GRID = "#dfcfbf"
 CREDIT = "©Wisdom Akpabio"
 STROKE = 1.15
 HALO = [pe.withStroke(linewidth=3.0, foreground=PAGE)]
 SMALL_HALO = [pe.withStroke(linewidth=2.2, foreground=PAGE)]
 
-BUILT = "#163d44"
-BARE = "#9b3b2f"
+# Same hues as the plates: built-up is the land-cover plate's dull red, farmland its ochre.
+BUILT = "#9e4c42"
+BARE = "#c8952e"
 GREEN = "#5d7a3a"
-FRINGE = "#b5652a"
+FRINGE = "#b0562c"
+CITY = "#2f5d7c"
+HOT_SEASON = "#b0562c"
+HARMATTAN = "#d9a441"
+WET = "#2f5d7c"
 
 
 def _fp(bold: bool, size: float) -> FontProperties:
@@ -152,13 +157,13 @@ def cool_island_by_year() -> str:
     )
     x = df["year"].to_numpy()
     w = 0.38
-    ax.bar(x - w / 2, df["suhi_median"], width=w, color=BUILT, zorder=3)
+    ax.bar(x - w / 2, df["suhi_median"], width=w, color=CITY, zorder=3)
     ax.bar(x + w / 2, df["fringe_minus_core"], width=w, color=FRINGE, zorder=3)
     ax.axhline(0, color=INK, lw=0.9, zorder=4)
     ax.set_xticks(x)
     ax.yaxis.set_major_locator(MultipleLocator(0.5))
     ax.set_ylim(-2.8, 2.8)
-    ax.text(x[0] - 0.5, -2.55, "City minus rural ring", color=BUILT, fontproperties=_fp(True, 12),
+    ax.text(x[0] - 0.5, -2.55, "City minus rural ring", color=CITY, fontproperties=_fp(True, 12),
             path_effects=HALO, va="center")
     ax.text(x[0] - 0.5, 2.55, "Fringe minus old city", color=FRINGE, fontproperties=_fp(True, 12),
             path_effects=HALO, va="center")
@@ -171,8 +176,9 @@ def cool_day_warm_night() -> str:
     s = pd.read_csv(DATA_PROCESSED / "modis_summary.csv")
     order = ("Terra 10:30", "Aqua 13:30", "Terra 22:30", "Aqua 01:30")
     ticks = ("10:30", "13:30", "22:30", "01:30")
-    seasons = (("hot", "Hot season, March to May", BARE), ("harmattan", "Harmattan, November to February", FRINGE),
-               ("wet", "Wet season, June to September", "#2f6f9f"))
+    seasons = (("hot", "Hot season, March to May", HOT_SEASON),
+               ("harmattan", "Harmattan, November to February", HARMATTAN),
+               ("wet", "Wet season, June to September", WET))
     fig, ax = _open_plate(
         "COOL BY DAY, WARM BY NIGHT",
         "Kano against the farmland around it",
@@ -186,7 +192,7 @@ def cool_day_warm_night() -> str:
         vals = [s[(s["season"] == season) & (s["overpass"] == op)]["city_minus_ring_median"].squeeze() for op in order]
         ax.bar(x + (k - 1) * w, vals, width=w, color=color, zorder=3, label=label)
     ax.axhline(0, color=INK, lw=0.9, zorder=4)
-    ax.axvspan(1.5, 3.5, color="#1c2833", alpha=0.07, zorder=1)
+    ax.axvspan(1.5, 3.5, color="#2b1d16", alpha=0.08, zorder=1)
     ax.text(0.5, 2.25, "Day", ha="center", fontproperties=_fp(True, 12), color=INK)
     ax.text(2.5, 2.25, "Night", ha="center", fontproperties=_fp(True, 12), color=INK)
     ax.set_xticks(x)

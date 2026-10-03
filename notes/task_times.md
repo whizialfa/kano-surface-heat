@@ -242,3 +242,16 @@ Wall-clock times for work Wisdom asked for. Local time. Stage seconds are `time.
 - `2026-09-27 08:54:21 WAT` done **land-cover change test** in **0.1 min** (5 s) — 5733 hexes → change_summary.csv
 - `2026-09-27 08:55:11 WAT` start **land-cover change test** — hexes, 2015–17 against 2024–26
 - `2026-09-27 08:55:16 WAT` done **land-cover change test** in **0.1 min** (5 s) — 5733 hexes → change_summary.csv
+- `2026-09-27 09:49:56 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 09:50:10 WAT` done **paper and brief** in **0.2 min** (15 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 09:53:54 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 09:54:07 WAT` done **paper and brief** in **0.2 min** (14 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 09:54:40 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 09:54:51 WAT` done **paper and brief** in **0.2 min** (11 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 09:55:32 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 10:11:03 WAT` done **paper and brief** in **0.5 min** (29 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 10:11:39 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 10:11:58 WAT` done **paper and brief** in **0.3 min** (19 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 10:13:17 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
+- `2026-09-27 10:13:29 WAT` done **paper and brief** in **0.2 min** (12 s) — paper 4.4 MB, brief 2.0 MB → docs/
+- `2026-09-27 10:14:00 WAT` start **paper and brief** — pandoc, Chrome PDF, docs/ site
