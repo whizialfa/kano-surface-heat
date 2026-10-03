@@ -27,7 +27,7 @@
     color: var(--teal);
   }
   @bottom-left {
-    content: "Akpabio · Hot ground";
+    content: "Akpabio · Cool by day, warm by night";
     font-family: var(--sans);
     font-size: 8pt;
     color: var(--gold);
@@ -62,7 +62,7 @@ body {
 .mast {
   background: var(--teal);
   color: var(--paper);
-  padding: 20px 24px 18px;
+  padding: 22px 24px 20px;
   margin: 0 0 16px;
   border-bottom: 5px solid var(--gold);
 }
@@ -79,10 +79,11 @@ body {
 .doc-title {
   margin: 0;
   font-family: var(--sans);
-  font-size: 21pt;
-  line-height: 1.18;
+  font-size: 15.75pt;
+  line-height: 1.28;
   font-weight: 700;
   color: #ffffff;
+  max-width: 42rem;
 }
 
 .doc-sub {
@@ -353,7 +354,7 @@ figure.study-map {
 }
 
 figure.study-map img {
-  max-height: 148mm;
+  max-height: 118mm;
   object-fit: contain;
   border: 0.6pt solid var(--teal);
 }
@@ -567,12 +568,16 @@ figure.brief-chart img {
 }
 
 figure.brief-plate img {
-  max-height: 86mm;
+  max-height: 78mm;
   border: 0.6pt solid var(--teal);
 }
 
+figure.brief-study img {
+  max-height: 92mm;
+}
+
 figure.brief-chart img {
-  max-height: 62mm;
+  max-height: 58mm;
 }
 
 figure.brief-plate figcaption,

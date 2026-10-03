@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hot ground</title>
+  <title>Cool by day, warm by night: surface heat, yearly land cover and people in metropolitan Kano, 2015 to 2026</title>
   <link rel="stylesheet" href="print.css" />
 <style>
 @media screen {
@@ -15,12 +15,12 @@
 <body>
   <header class="mast">
     <p class="kicker">Kano · Surface heat · 2015 to 2026</p>
-    <h1 class="doc-title">Hot ground</h1>
+    <h1 class="doc-title">Cool by day, warm by night: surface heat, yearly land cover and people in metropolitan Kano, 2015 to 2026</h1>
     <p class="doc-sub">Where Kano’s surfaces get hottest, when, and who lives on them</p>
     <div class="byline">
       <span class="author">Wisdom Akpabio</span>
       <span class="dot">·</span>
-      <span class="when">September 2026</span>
+      <span class="when">October 2026</span>
     </div>
     <p class="adapt">Surface temperature and land cover, adapted from <a href="https://doi.org/10.1038/s41598-025-09141-5">Ramachandra, Rana, Vinay and Aithal, <em>Scientific Reports</em> (2025)</a>.</p>
     <p class="map-link"><a href="https://whizialfa.github.io/kano-surface-heat/paper/kano_surface_heat.pdf">Full paper (PDF)</a> · <a href="https://github.com/whizialfa/kano-surface-heat">Code and data</a> · <a href="paper/hot_ground_brief.pdf">This brief (PDF)</a></p>
@@ -29,13 +29,25 @@
   <main>
 <p>Most people picture a city as a heat island: hotter than the country around it, day and night. Kano is not quite that. On a hot March morning, the ground in the city is cooler than the farmland around it. After dark it is the other way round.</p>
 <p>These numbers come from satellites that measure how hot the ground, roofs and trees are, not how hot the air feels. Landsat photographs Kano at about 10:30 in the morning. Two MODIS satellites add passes at 13:30, 22:30 and 01:30. The study area is metropolitan Kano, eight local government areas and 5.8 million people, the same outline used in <em>Fifteen minutes on foot</em>.</p>
+<figure class="brief-plate brief-study">
+<img src="img/kano_study_area.jpg" alt="Study area of metropolitan Kano" />
+<figcaption>
+Eight local government areas. Blue is the old city. Terracotta is Ungogo and Kumbotso, where the city has grown. Gold is the farmland ring used as the comparison.
+</figcaption>
+</figure>
 <h1 id="cooler-than-its-fields-by-day">Cooler than its fields by day</h1>
 <p>In every clear Landsat picture from March and April since 2015, 28 of them, the city’s ground was cooler than the farmland 1 to 10 km outside it, typically by about 1.6 °C. In the same pictures, the new edge of the city in Ungogo and Kumbotso was hotter than the old city, by about 1.75 °C. The only exceptions come in May, after the first storms wet the fields.</p>
+<figure class="brief-plate">
+<img src="img/lst_years.png" alt="Yearly surface heat in Kano, each year minus its farmland ring" />
+<figcaption>
+Each hot season minus the farmland around the city that year. Blue is cooler than the fields; red is hotter. 2019 is the year an early storm wet the ring.
+</figcaption>
+</figure>
 <p>The reason is what covers the ground. In the hot season, farmland is bare, dry earth with nothing to cool it, and it bakes. The old city is thick walls, courtyards, narrow shaded lanes and yard trees, and much of what the satellite sees there is shade. Built-up ground covers 45% of the metropolitan area and cropland 40%. The more of a small patch is built up, the cooler its ground: fully built patches average 44.8 °C, patches with no buildings 47.0 °C. Greenness, as a satellite measures it, makes almost no difference in March.</p>
 <figure class="brief-plate">
 <img src="img/kano_heat_plate.jpg" alt="Hot-season surface temperature in Kano" />
 <figcaption>
-Hot ground in Kano. Hot-season surface temperature, March to May, averaged over twelve years. Blue is cooler ground, red is hotter. The cool blue runs through the old city and the dense south; the red sits on the northern and western farmland.
+Hot-season surface temperature, March to May, averaged over twelve years. Blue is cooler ground, red is hotter. The cool blue runs through the old city and the dense south; the red sits on the northern and western farmland.
 </figcaption>
 </figure>
 <h1 id="warmer-by-night">Warmer by night</h1>
@@ -51,16 +63,22 @@ Below zero, the city’s ground is cooler than the farmland around it. In the dr
 <figure class="brief-plate">
 <img src="img/kano_heat_walk_plate.jpg" alt="Hot ground and long walks in Kano" />
 <figcaption>
-Hot ground and long walks. Dark red is the hottest fifth of lived-in neighbourhoods that are also more than a 15-minute walk from clinics and schools. Almost none of the hottest ground is close to services.
+Dark red is the hottest fifth of lived-in neighbourhoods that are also more than a 15-minute walk from clinics and schools. Almost none of the hottest ground is close to services.
 </figcaption>
 </figure>
 <h1 id="where-the-city-is-growing">Where the city is growing</h1>
 <p>Kano is building onto that hot edge. Built-up land grew from about 38% of the metropolitan area in 2015 to 52% in 2026, and an independent satellite map shows the same rise. Where farmland was built over, the ground cooled by day compared with farmland that stayed open, by about 0.3 to 0.6 °C. The new neighbourhoods are in Gayawa, Rangaza, Kadawa and Tudun Fulani in Ungogo, and in Garun Gawa, Kureken Sani, Danbare and Mariri in Kumbotso.</p>
+<figure class="brief-plate">
+<img src="img/lulc_years.png" alt="Yearly land cover in Kano, 2015 to 2026" />
+<figcaption>
+Land cover, year by year, from the same Landsat scenes as the heat. Built-up is dull red. The city thickens north into Ungogo and south into Kumbotso.
+</figcaption>
+</figure>
 <p>That cooling is a daytime result. The same walls that cool the new edge at mid-morning are the ones that keep the old city warm at night.</p>
 <h1 id="what-this-means">What this means</h1>
 <p>Two places matter, at two times of day. By day it is the farmland edge, where the city is growing and where people are both on the hottest ground and farthest from clinics and schools. By night it is the dense old city, which shelters people from the midday sun and holds the most heat while they sleep. Advice written for other cities, such as more green cover per plot, fits Kano poorly in March: what cools the ground here by day is shade and moisture.</p>
 <h1 id="what-this-does-not-show">What this does not show</h1>
-<p>This is the temperature of surfaces, not of the air, and not heat stress: there is no humidity or wind here. The night-time figures are at 1 km, coarser than the 30 m daytime maps. Population figures are modelled, and they apply the same age structure everywhere in the city, so they give counts of children and elders but cannot show whether children live on hotter ground than adults.</p>
+<p>This is the temperature of surfaces, not of the air, and not heat stress: there is no humidity or wind here. The night-time figures are at 1 km, coarser than the 30 m daytime maps. Population figures are modelled, and they apply the same age structure everywhere in the city, so they give counts of children and elders but cannot show whether children live on hotter ground than adults. The yearly land-cover maps are 85.6% on a blocked test of pure cells; mixed edges are harder, and grass and shrub is the weak class.</p>
 <p>This study adapts the method of Ramachandra, Rana, Vinay and Aithal (2025), who studied Bangalore from a single morning picture. Kano adds twelve years of pictures, night-time passes, land cover for every year, and the people who live on the ground.</p>
   </main>
 </body>
